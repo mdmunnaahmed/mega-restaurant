@@ -1,0 +1,38 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	color: hsl(var(--body));
+	line-height: 1.6;
+	font-family: var(--body-font);
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: hsl(var(--body));
+	&:hover {
+		color: hsl(var(--base));
+	}
+}
+a,
+img,
+.name {
+	@extend %transition;
+}
+span,
+sub,
+sup,
+a {
+	display: inline-block;
+}
+
+.custom-container {
+	max-width: 1250px;
+	margin: 0 auto;
+}
