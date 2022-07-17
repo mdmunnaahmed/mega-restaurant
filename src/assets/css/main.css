@@ -2179,8 +2179,28 @@ input:-webkit-autofill:focus {
     gap: 50px;
 }
 
+.feature-wrapper.wrapper-two {
+    gap: 35px;
+}
+
 .feature-width {
     width: calc(33.3333333333% - 33.3333333333px);
+}
+
+.feature-width.width-two {
+    width: calc(25% - 26.25px);
+}
+
+@media (max-width: 767px) {
+    .feature-width.width-two {
+        width: calc(50% - 25px);
+    }
+}
+
+@media (max-width: 575px) {
+    .feature-width.width-two {
+        width: 100%;
+    }
 }
 
 @media (max-width: 991px) {

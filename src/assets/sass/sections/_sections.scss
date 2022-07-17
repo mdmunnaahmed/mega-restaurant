@@ -73,9 +73,21 @@
 // Feature Card Starts Here
 .feature-wrapper {
 	gap: 50px;
+	&.wrapper-two {
+		gap: 35px;
+	}
 }
 .feature-width {
 	width: calc((100% / 3) - ((50px * 2) / 3));
+	&.width-two {
+		width: calc((100% / 4) - ((35px * 3) / 4));
+		@include breakpoint(max-md) {
+		width: calc((100% / 2) - 25px);
+	}
+	@include breakpoint(max-sm) {
+		width: 100%;
+	}
+	}
 	@include breakpoint(max-lg) {
 		width: calc((100% / 2) - 25px);
 	}
