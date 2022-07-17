@@ -158,3 +158,18 @@ $(".menu li a").each(function () {
 		$(this).addClass("active");
 	}
 });
+
+let scheduleId = $("#schedule");
+let nowId = $("#now");
+
+scheduleId.on("change", function (e) {
+	if ((scheduleId.checked = true)) {
+		scheduleId.parent(".form-group").siblings(".form-select").removeAttr("disabled", "");
+	}
+});
+
+nowId.on("change", function (e) {
+	if ((nowId.checked = true)) {
+		scheduleId.parent(".form-group").siblings(".form-select").attr("disabled", "");
+	}
+});

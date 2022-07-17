@@ -38,7 +38,7 @@
 }
 .cmn-btn-wrapper {
 	gap: 0px 20px;
-	@include breakpoint (max-sm) {
+	@include breakpoint(max-sm) {
 		gap: 0px 15px;
 	}
 	a {
@@ -108,13 +108,20 @@
 	}
 }
 .time-table {
-	padding: 30px 40px;
+	padding: 20px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 5px 0px hsl(var(--dark) / 0.1);
+	box-shadow: 0px 2px 8px 0px hsl(var(--dark) / 0.1);
+	@include breakpoint(sm) {
+		padding: 30px 40px;
+	}
 }
 .schedule-wrapper {
-	padding: 15px 20px;
+	padding: 20px 20px 25px;
 	border-radius: 5px;
+}
+
+.outer-time-radio {
+	padding: 0 20px;
 }
 .time-content {
 	padding-left: 20px;
@@ -124,10 +131,10 @@
 }
 // Feature Card Ends Here
 
-// Guide Section Starts Here 
+// Guide Section Starts Here
 .guide-content {
-	@include breakpoint (lg) {
+	@include breakpoint(lg) {
 		padding-left: 20px;
 	}
 }
-// Guide Section Ends Here 
+// Guide Section Ends Here

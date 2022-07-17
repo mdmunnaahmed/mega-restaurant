@@ -28,25 +28,6 @@ input:-webkit-autofill:focus {
 .custom--radio {
 	position: relative;
 	padding-left: 0;
-	input[type="radio"] {
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		visibility: hidden;
-		cursor: pointer;
-		&:checked {
-			~ label {
-				&::before {
-					border-width: 2px;
-					border-color: hsl(var(--base)) !important;
-				}
-				&::after {
-					opacity: 1;
-				}
-			}
-		}
-	}
 	label {
 		margin-bottom: 0;
 		position: relative;
@@ -60,7 +41,7 @@ input:-webkit-autofill:focus {
 			left: 0;
 			width: 15px;
 			height: 15px;
-			border: 1px solid #888888;
+			border: 1px solid #999;
 		}
 		&::after {
 			position: absolute;
@@ -71,6 +52,36 @@ input:-webkit-autofill:focus {
 			height: 7px;
 			background-color: hsl(var(--base)) !important;
 			opacity: 0;
+		}
+	}
+
+	input[type="radio"] {
+		display: none;
+		&:checked ~ label {
+			&::before {
+				border-width: 2px;
+				border-color: hsl(var(--base)) !important;
+			}
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
+.time-radio {
+	label {
+		cursor: pointer;
+		display: block;
+		padding-left: 0;
+		font-weight: 500;
+		font-size: 18px;
+		&::before {
+			right: 0;
+			left: auto;
+		}
+		&::after {
+			left: auto;
+			right: 4px;
 		}
 	}
 }
