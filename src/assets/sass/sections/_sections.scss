@@ -22,13 +22,13 @@
 
 // Common Card Starts Here
 .common-card-wrapper {
-    gap: 30px 0;
+	gap: 30px 0;
 }
 .why-section-header {
-    padding: 25px 20px;
-    @include breakpoint(sm) {
-        padding: 40px 30px;
-    }
+	padding: 25px 20px;
+	@include breakpoint(sm) {
+		padding: 40px 30px;
+	}
 }
 .common-card {
 	&__thumb {
@@ -39,15 +39,15 @@
 		}
 	}
 	&__content {
-        padding-top: 20px;
-        @include breakpoint(max-sm) {
-            padding-bottom: 14px;
-        }
+		padding-top: 20px;
+		@include breakpoint(max-sm) {
+			padding-bottom: 14px;
+		}
 		&-title {
-            margin-bottom: 20px;
-            @include breakpoint(max-sm) {
-                margin-bottom: 14px;
-            }
+			margin-bottom: 20px;
+			@include breakpoint(max-sm) {
+				margin-bottom: 14px;
+			}
 		}
 	}
 	&:hover {

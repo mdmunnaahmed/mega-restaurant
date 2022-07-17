@@ -1,0 +1,14 @@
+// Footer Section Starts Here
+.footer-widget {
+	&__title {
+	}
+}
+.links {
+	li {
+        padding: 4px 0;
+		a {
+			color: hsl(var(--white));
+		}
+	}
+}
+// Footer Section Ends Here

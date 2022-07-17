@@ -1650,6 +1650,14 @@ input:-webkit-autofill:focus {
     top: -8px;
 }
 
+.links li {
+    padding: 4px 0;
+}
+
+.links li a {
+    color: hsl(var(--white));
+}
+
 .banner-section {
     padding-top: 150px;
     padding-bottom: 100px;
