@@ -57,3 +57,35 @@
 	}
 }
 // Common Card Ends Here
+
+// Feature Card Starts Here
+.feature-wrapper {
+	gap: 50px;
+}
+.feature-width {
+	width: calc((100% / 3) - ((50px * 2) / 3));
+	@include breakpoint(max-lg) {
+		width: calc((100% / 2) - 25px);
+	}
+	@include breakpoint(max-md) {
+		width: 100%;
+	}
+}
+.feature-card {
+	&__thumb {
+		width: 128px;
+		height: 128px;
+		border-radius: 50%;
+		background-color: hsl(var(--base) / 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 20px;
+	}
+	&__content {
+		&-title {
+			margin-bottom: 20px;
+		}
+	}
+}
+// Feature Card Ends Here

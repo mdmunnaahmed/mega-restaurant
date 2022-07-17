@@ -38,7 +38,8 @@
 		}
 	}
 }
-.banner-thumb {
+.banner-thumb,
+.section-thumb {
 	position: relative;
 	padding-left: 20px;
 	@include breakpoint(md) {
@@ -105,6 +106,31 @@
 	img {
 		position: relative;
 		z-index: 1;
+	}
+}
+.section-thumb {
+	max-width: 100%;
+	margin-right: 0;
+	&::after,
+	&::before {
+		height: 160px;
+		right: 0;
+	}
+	&::before {
+		top: -30px;
+		width: 350px;
+		left: auto;
+	}
+	&::after {
+		width: 120px;
+		height: 120px;
+		left: auto;
+		bottom: -25px;
+		right: 10px;
+		animation: pulse 2.5s linear infinite;
+	}
+	img {
+		padding-right: 35px;
 	}
 }
 // Banner Section Ends Here
