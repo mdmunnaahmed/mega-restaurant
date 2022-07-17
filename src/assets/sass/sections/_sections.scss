@@ -100,7 +100,7 @@
 		}
 	}
 }
-.time-table {
+.cmn-box {
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 2px 8px 0px hsl(var(--dark) / 0.1);
@@ -131,3 +131,29 @@
 	}
 }
 // Guide Section Ends Here
+
+// Filter Section Starts Here
+.filter-widget {
+	&__title {
+		padding: 10px 15px;
+		border-radius: 10px;
+		position: relative;
+		background-color: hsl(var(--light));
+		&::before {
+			@extend %line-ico;
+			content: "\f107";
+			position: absolute;
+			right: 15px;
+		}
+	}
+	&__content {
+		display: none;
+		&.open {
+			display: block;
+		}
+	}
+	.filter-checkbox {
+		padding: 10px 15px;
+	}
+}
+// Filter Section Ends Here

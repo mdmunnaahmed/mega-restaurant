@@ -1,7 +1,8 @@
 // Banner Section Starts Here
 .banner-section {
-	padding-top: 150px;
+	padding-top: 130px;
 	padding-bottom: 100px;
+	overflow: hidden;
 	@include breakpoint(max-lg) {
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -162,12 +163,15 @@
 	}
 	&::after {
 		top: -15px;
-		left: 120px;
+		left: 100px;
+		height: 200px;
+		width: 280px;
 		@include breakpoint (max-lg) {
-			left: 285px;
+			left: 205px;
+			width: 350px;
 			height: 100px;
 		}
-		@include breakpoint (max-sm) {
+		@include breakpoint (max-md) {
 			width: 200px;
 			left: 50px;
 		}

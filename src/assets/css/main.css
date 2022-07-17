@@ -280,7 +280,7 @@ img,
     transition: all 0.3s;
 }
 
-.menu li.has-sub-menu > a::after, .list.list-style-two li::before, .list.list-style-check li::before {
+.filter-widget__title::before, .menu li.has-sub-menu > a::after, .list.list-style-two li::before, .list.list-style-check li::before {
     position: absolute;
     font-weight: 900;
     font-size: 16px;
@@ -538,7 +538,7 @@ h6 {
 
 .btn.btn--md,
 .cmn--btn.btn--md {
-    padding: 10px 25px !important;
+    padding: 7px 20px !important;
     font-size: 15px;
 }
 
@@ -571,10 +571,22 @@ h6 {
     color: hsl(var(--white));
 }
 
+.btn--primary:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
+}
+
 .btn--secondary {
     background-color: hsl(var(--secondary));
     border: 2px solid hsl(var(--secondary));
     color: hsl(var(--white));
+}
+
+.btn--secondary:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
 }
 
 .btn--success {
@@ -583,10 +595,22 @@ h6 {
     color: hsl(var(--white));
 }
 
+.btn--success:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
+}
+
 .btn--danger {
     background-color: hsl(var(--danger));
     border: 2px solid hsl(var(--danger));
     color: hsl(var(--white));
+}
+
+.btn--danger:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
 }
 
 .btn--warning {
@@ -595,10 +619,22 @@ h6 {
     color: hsl(var(--white));
 }
 
+.btn--warning:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
+}
+
 .btn--info {
     background-color: var(--info);
     border: 2px solid var(--info);
     color: hsl(var(--white));
+}
+
+.btn--info:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
 }
 
 .btn--light {
@@ -607,16 +643,34 @@ h6 {
     color: hsl(var(--white));
 }
 
+.btn--light:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
+}
+
 .btn--dark {
     background-color: hsl(var(--dark));
     border: 2px solid hsl(var(--dark));
     color: hsl(var(--white));
 }
 
+.btn--dark:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
+}
+
 .btn--base {
     background-color: hsl(var(--base));
     border: 2px solid hsl(var(--base));
     color: hsl(var(--white));
+}
+
+.btn--base:hover {
+    background-color: transparent;
+    border: 2px solid hsl(var(--base));
+    color: hsl(var(--base));
 }
 
 .btn--light {
@@ -1182,7 +1236,7 @@ input:-webkit-autofill:focus {
 }
 
 .custom--checkbox {
-    padding-left: rem(25px);
+    padding-left: 25px;
 }
 
 .custom--checkbox input {
@@ -1190,27 +1244,51 @@ input:-webkit-autofill:focus {
 }
 
 .custom--checkbox input:checked ~ label::before {
-    content: "\f14a";
-    color: hsl(var(--base));
+    content: "\f00c";
+    color: hsl(var(--white));
+    background-color: hsl(var(--base));
+    border-color: hsl(var(--base));
 }
 
 .custom--checkbox label {
     position: relative;
-    font-size: rem(15px);
     font-weight: 400;
     cursor: pointer;
     margin-bottom: 0;
 }
 
 .custom--checkbox label::before {
+    font-size: 11px;
     position: absolute;
-    content: "\f04d";
-    font-family: "Line Awesome Free";
+    width: 16px;
+    height: 16px;
+    content: "";
+    border: 2px solid hsl(var(--border));
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    top: 3px;
-    left: rem(-25px);
-    font-size: rem(20px);
+    top: 6px;
+    left: -25px;
     line-height: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+}
+
+.filter-checkbox {
+    padding-left: 0;
+}
+
+.filter-checkbox label {
+    cursor: pointer;
+    display: block;
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.filter-checkbox label::before {
+    right: 0;
+    left: auto;
 }
 
 /* form css end*/
@@ -1384,18 +1462,31 @@ input:-webkit-autofill:focus {
 .header {
     position: sticky;
     width: 100%;
-    top: 0;
     z-index: 111;
+    top: 0;
+}
+
+@media (min-width: 992px) {
+    .header {
+        top: 15px;
+    }
 }
 
 .header.sticky {
+    top: 0;
     background-color: hsl(var(--white));
     box-shadow: 0 3px 15px hsl(var(--dark)/0.1);
 }
 
 .header-bottom-area {
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+    .header-bottom-area {
+        padding: 10px 0;
+    }
 }
 
 @media (min-width: 576px) {
@@ -1482,11 +1573,9 @@ input:-webkit-autofill:focus {
 
 .menu li a {
     display: block;
-    padding: 4px 15px;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
     position: relative;
+    color: #838383;
+    padding: 7px 20px;
 }
 
 .menu .menu-close {
@@ -1505,8 +1594,10 @@ input:-webkit-autofill:focus {
         position: relative;
     }
 
-    .menu li a {
-        padding: 15px;
+    .menu li a.active {
+        border-radius: 25px;
+        color: hsl(var(--white));
+        background-color: hsl(var(--dark));
     }
 
     .sub-menu {
@@ -1582,7 +1673,7 @@ input:-webkit-autofill:focus {
         width: 100%;
         transform-origin: top;
         overflow-y: auto;
-        background: hsl(var(--accent));
+        background: hsl(var(--base));
         display: none;
     }
 
@@ -1597,7 +1688,7 @@ input:-webkit-autofill:focus {
     .menu li {
         padding: 3px 0;
         width: 100%;
-        border-bottom: 1px solid hsl(var(--white)/0.1);
+        border-bottom: 1px solid hsl(var(--white)/0.2);
     }
 
     .menu li:nth-last-child(1) {
@@ -1663,10 +1754,30 @@ input:-webkit-autofill:focus {
     top: -8px;
 }
 
+.cart-count {
+    position: absolute;
+    background: hsl(var(--base));
+    color: hsl(var(--white));
+    top: -5px;
+    right: -6px;
+    text-align: center;
+    border: 3px solid hsl(var(--base));
+    font-size: 12px;
+    min-width: 20px;
+    line-height: 14px;
+    border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+    .footer-widget {
+        padding: 15px 0;
+        border-bottom: 1px solid hsl(var(--white)/0.2);
+    }
+}
+
 @media (max-width: 575px) {
     .footer-widget__title {
         position: relative;
-        border-bottom: 1px solid hsl(var(--white)/0.2);
     }
 
     .footer-widget__title::before {
@@ -1698,12 +1809,24 @@ input:-webkit-autofill:focus {
 
 .footer-bottom {
     padding: 30px 0;
-    border-top: 1px solid hsl(var(--white)/0.2);
+}
+
+@media (min-width: 576px) {
+    .footer-bottom {
+        border-top: 1px solid hsl(var(--white)/0.2);
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-bottom {
+        padding: 0 0 20px;
+    }
 }
 
 .banner-section {
-    padding-top: 150px;
+    padding-top: 130px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 @media (max-width: 991px) {
@@ -1947,17 +2070,20 @@ input:-webkit-autofill:focus {
 
 .guide-thumb::after {
     top: -15px;
-    left: 120px;
+    left: 100px;
+    height: 200px;
+    width: 280px;
 }
 
 @media (max-width: 991px) {
     .guide-thumb::after {
-        left: 285px;
+        left: 205px;
+        width: 350px;
         height: 100px;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .guide-thumb::after {
         width: 200px;
         left: 50px;
@@ -2084,14 +2210,14 @@ input:-webkit-autofill:focus {
     margin-bottom: 20px;
 }
 
-.time-table {
+.cmn-box {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px 0px hsl(var(--dark)/0.1);
 }
 
 @media (min-width: 576px) {
-    .time-table {
+    .cmn-box {
         padding: 30px 40px;
     }
 }
@@ -2119,5 +2245,30 @@ input:-webkit-autofill:focus {
     .guide-content {
         padding-left: 20px;
     }
+}
+
+.filter-widget__title {
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    background-color: hsl(var(--light));
+}
+
+.filter-widget__title::before {
+    content: "\f107";
+    position: absolute;
+    right: 15px;
+}
+
+.filter-widget__content {
+    display: none;
+}
+
+.filter-widget__content.open {
+    display: block;
+}
+
+.filter-widget .filter-checkbox {
+    padding: 10px 15px;
 }
 /*# sourceMappingURL=main.css.map */

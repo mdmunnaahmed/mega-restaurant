@@ -16,7 +16,7 @@
 		}
 	}
 	&.btn--md {
-		padding: 10px 25px !important;
+		padding: 7px 20px !important;
 		font-size: 15px;
 	}
 	&.btn--sm {
@@ -47,6 +47,11 @@ $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "succ
 		background-color: $color;
 		border: 2px solid $color;
 		color: hsl(var(--white));
+		&:hover {
+			background-color: transparent;
+			border: 2px solid hsl(var(--base));
+			color: hsl(var(--base));
+		}
 	}
 }
 .btn--light {

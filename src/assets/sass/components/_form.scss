@@ -86,34 +86,56 @@ input:-webkit-autofill:focus {
 	}
 }
 .custom--checkbox {
-	padding-left: rem(25px);
+	padding-left: 25px;
 	input {
 		display: none;
 		&:checked {
 			~ label {
 				&::before {
-					content: "\f14a";
-					color: hsl(var(--base));
+					content: "\f00c";
+					color: hsl(var(--white));
+					background-color: hsl(var(--base));
+					border-color: hsl(var(--base));
 				}
 			}
 		}
 	}
 	label {
 		position: relative;
-		font-size: rem(15px);
 		font-weight: 400;
 		cursor: pointer;
 		margin-bottom: 0;
 		&::before {
+			font-size: 11px;
 			position: absolute;
-			content: "\f04d";
-			font-family: "Line Awesome Free";
+			width: 16px;
+			height: 16px;
+			content: "";
+			border: 2px solid hsl(var(--border));
+			font-family: "Font Awesome 5 Free";
 			font-weight: 900;
-			top: 3px;
-			left: rem(-25px);
-			font-size: rem(20px);
+			top: 6px;
+			left: -25px;
 			line-height: 1;
 			@extend %transition;
+			display: grid;
+			place-items: center;
+			border-radius: 3px;
+		}
+	}
+}
+
+.filter-checkbox {
+	padding-left: 0;
+	label {
+		cursor: pointer;
+		display: block;
+		padding-left: 0;
+		font-weight: 500;
+		font-size: 18px;
+		&::before {
+			right: 0;
+			left: auto;
 		}
 	}
 }
