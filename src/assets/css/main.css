@@ -1666,6 +1666,25 @@ input:-webkit-autofill:focus {
 @media (max-width: 575px) {
     .footer-widget__title {
         position: relative;
+        border-bottom: 1px solid hsl(var(--white)/0.2);
+    }
+
+    .footer-widget__title::before {
+        position: absolute;
+        font-weight: 900;
+        font-size: 16px;
+        font-family: "Line Awesome Free";
+        content: "\f107";
+        position: absolute;
+        right: 0px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .links {
+        display: none;
+        padding-top: 10px;
     }
 }
 

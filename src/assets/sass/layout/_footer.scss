@@ -3,10 +3,22 @@
 	&__title {
 		@include breakpoint(max-sm) {
 			position: relative;
+			border-bottom: 1px solid hsl(var(--white)/.2);
+			&::before {
+				@include line-ico;
+				content: '\f107';
+				position: absolute;
+				right: 0px;
+				font-size: 15px;
+			}
 		}
 	}
 }
 .links {
+	@include breakpoint (max-sm) {
+		display: none;
+		padding-top: 10px;
+	}
 	li {
         padding: 4px 0;
 		a {
