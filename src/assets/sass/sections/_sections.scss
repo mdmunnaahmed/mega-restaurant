@@ -36,17 +36,10 @@
 		box-shadow: 0px 0px 10px 0px hsl(var(--dark) / 0.1);
 	}
 }
-.cmn-btn-wrapper {
+.btn-wrapper {
 	gap: 0px 20px;
 	@include breakpoint(max-sm) {
 		gap: 0px 15px;
-	}
-	a {
-		width: 130px;
-		display: block;
-		img {
-			width: 100%;
-		}
 	}
 }
 .common-card {

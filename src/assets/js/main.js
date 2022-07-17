@@ -45,6 +45,12 @@ $(".menu li a").on("click", function (e) {
 	}
 });
 
+$(".footer-widget__title").on("click", function (e) {
+	if (parseInt(screenSize) < parseInt(575)) {
+		$(this).siblings(".links").slideToggle();
+	}
+});
+
 // Sticky Menu
 var header = document.querySelector(".header");
 if (header) {

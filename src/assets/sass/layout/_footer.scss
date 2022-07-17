@@ -1,6 +1,9 @@
 // Footer Section Starts Here
 .footer-widget {
 	&__title {
+		@include breakpoint(max-sm) {
+			position: relative;
+		}
 	}
 }
 .links {
@@ -10,5 +13,9 @@
 			color: hsl(var(--white));
 		}
 	}
+}
+.footer-bottom {
+	padding: 30px 0;
+	border-top: 1px solid hsl(var(--white)/.2);
 }
 // Footer Section Ends Here
