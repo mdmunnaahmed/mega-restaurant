@@ -1840,23 +1840,85 @@ input:-webkit-autofill:focus {
     right: 0;
 }
 
+@media (max-width: 575px) {
+    .section-thumb::after, .section-thumb::before {
+        height: 115px;
+    }
+}
+
 .section-thumb::before {
     top: -30px;
     width: 350px;
     left: auto;
 }
 
+@media (max-width: 575px) {
+    .section-thumb::before {
+        width: 250px;
+    }
+}
+
 .section-thumb::after {
-    width: 120px;
-    height: 120px;
+    width: 83px;
+    height: 81px;
     left: auto;
     bottom: -25px;
     right: 10px;
     animation: pulse 2.5s linear infinite;
 }
 
+@media (max-width: 575px) {
+    .section-thumb::after {
+        bottom: -15px;
+    }
+}
+
 .section-thumb img {
     padding-right: 35px;
+}
+
+@media (max-width: 575px) {
+    .section-thumb img {
+        padding-right: 17px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-thumb .bg-shape {
+        width: 210px;
+        height: 90px !important;
+    }
+}
+
+.guide-thumb::before, .guide-thumb::after {
+    height: 340px;
+    width: 325px;
+}
+
+@media (max-width: 575px) {
+    .guide-thumb::before, .guide-thumb::after {
+        max-width: 227px;
+        max-height: 238px;
+    }
+}
+
+.guide-thumb::after {
+    top: -15px;
+    left: 120px;
+}
+
+@media (max-width: 991px) {
+    .guide-thumb::after {
+        left: 285px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    .guide-thumb::after {
+        width: 200px;
+        left: 50px;
+    }
 }
 
 .section-header {
@@ -1887,13 +1949,37 @@ input:-webkit-autofill:focus {
 }
 
 .why-section-header {
-    padding: 25px 20px;
+    padding: 25px 10px;
 }
 
 @media (min-width: 576px) {
     .why-section-header {
         padding: 40px 30px;
     }
+}
+
+.choose-wrapper.bg-white {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px hsl(var(--dark)/0.1);
+}
+
+.cmn-btn-wrapper {
+    gap: 0px 20px;
+}
+
+@media (max-width: 575px) {
+    .cmn-btn-wrapper {
+        gap: 0px 15px;
+    }
+}
+
+.cmn-btn-wrapper a {
+    width: 130px;
+    display: block;
+}
+
+.cmn-btn-wrapper a img {
+    width: 100%;
 }
 
 .common-card__thumb {
@@ -1962,5 +2048,32 @@ input:-webkit-autofill:focus {
 
 .feature-card__content-title {
     margin-bottom: 20px;
+}
+
+.time-table {
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px hsl(var(--dark)/0.1);
+}
+
+.schedule-wrapper {
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.time-content {
+    padding-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .time-content {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .guide-content {
+        padding-left: 20px;
+    }
 }
 /*# sourceMappingURL=main.css.map */

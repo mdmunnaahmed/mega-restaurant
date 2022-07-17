@@ -115,22 +115,62 @@
 	&::before {
 		height: 160px;
 		right: 0;
+		@include breakpoint(max-sm) {
+			height: 115px;
+		}
 	}
 	&::before {
 		top: -30px;
 		width: 350px;
 		left: auto;
+		@include breakpoint(max-sm) {
+			width: 250px;
+		}
 	}
 	&::after {
-		width: 120px;
-		height: 120px;
+		width: 83px;
+		height: 81px;
 		left: auto;
 		bottom: -25px;
 		right: 10px;
 		animation: pulse 2.5s linear infinite;
+		@include breakpoint(max-sm) {
+			bottom: -15px;
+		}
 	}
 	img {
 		padding-right: 35px;
+		@include breakpoint(max-sm) {
+			padding-right: 17px;
+		}
+	}
+	.bg-shape {
+		@include breakpoint(max-sm) {
+			width: 210px;
+			height: 90px !important;
+		}
+	}
+}
+.guide-thumb {
+	&::before, &::after {
+		height: 340px;
+		width: 325px;
+		@include breakpoint(max-sm) {
+			max-width: 227px;
+			max-height: 238px;
+		}
+	}
+	&::after {
+		top: -15px;
+		left: 120px;
+		@include breakpoint (max-lg) {
+			left: 285px;
+			height: 100px;
+		}
+		@include breakpoint (max-sm) {
+			width: 200px;
+			left: 50px;
+		}
 	}
 }
 // Banner Section Ends Here

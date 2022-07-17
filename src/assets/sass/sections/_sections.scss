@@ -25,9 +25,28 @@
 	gap: 30px 0;
 }
 .why-section-header {
-	padding: 25px 20px;
+	padding: 25px 10px;
 	@include breakpoint(sm) {
 		padding: 40px 30px;
+	}
+}
+.choose-wrapper {
+	&.bg-white {
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px 0px hsl(var(--dark) / 0.1);
+	}
+}
+.cmn-btn-wrapper {
+	gap: 0px 20px;
+	@include breakpoint (max-sm) {
+		gap: 0px 15px;
+	}
+	a {
+		width: 130px;
+		display: block;
+		img {
+			width: 100%;
+		}
 	}
 }
 .common-card {
@@ -88,4 +107,27 @@
 		}
 	}
 }
+.time-table {
+	padding: 30px 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px hsl(var(--dark) / 0.1);
+}
+.schedule-wrapper {
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+.time-content {
+	padding-left: 20px;
+	@include breakpoint(max-lg) {
+		padding-left: 0px;
+	}
+}
 // Feature Card Ends Here
+
+// Guide Section Starts Here 
+.guide-content {
+	@include breakpoint (lg) {
+		padding-left: 20px;
+	}
+}
+// Guide Section Ends Here 
