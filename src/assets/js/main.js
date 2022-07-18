@@ -124,20 +124,6 @@ $(".brand-slider").slick({
 	],
 });
 
-// Odometer Counter
-let counter = $(".counter-item");
-if (counter) {
-	counter.each(function () {
-		$(this).isInViewport(function (status) {
-			if (status === "entered") {
-				for (var i = 0; i < document.querySelectorAll(".odometer").length; i++) {
-					var el = document.querySelectorAll(".odometer")[i];
-					el.innerHTML = el.getAttribute("data-odometer-final");
-				}
-			}
-		});
-	});
-}
 
 //Faq
 $(".faq-item__title").on("click", function (e) {
@@ -155,10 +141,6 @@ $(".faq-item__title").on("click", function (e) {
 	}
 });
 
-$(".video-button").magnificPopup({
-	type: "iframe",
-	// other options
-});
 
 // Active Path Active
 var path = location.pathname.split("/");
