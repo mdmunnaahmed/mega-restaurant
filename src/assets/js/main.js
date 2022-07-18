@@ -47,7 +47,7 @@ $(".menu li a").on("click", function (e) {
 
 $(".footer-widget__title").on("click", function (e) {
 	if (parseInt(screenSize) < parseInt(575)) {
-		$(this).siblings(".footer-widget__content").slideToggle();
+		$(this).siblings(".links").slideToggle();
 	}
 });
 
