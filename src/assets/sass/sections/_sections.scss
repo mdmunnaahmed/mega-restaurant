@@ -169,3 +169,128 @@
 	}
 }
 // Filter Section Ends Here
+
+
+// Restaurant Section Starts Here
+.restaurant-title {
+	margin-bottom: 28px;
+}
+.border-xl-0 {
+	@include breakpoint (xl) {
+		border: 0 !important;
+	}
+}
+.search-box {
+	border: 1px solid hsl(var(--border));
+	padding: 8px;
+	border-radius: 10px;
+	@include breakpoint (max-xl) {
+		border: none;
+	}
+	.form-group {
+		position: relative;
+		width: calc(100% / 4);
+		height: 45px;
+		&.search--btn {
+			height: 100%;
+		}
+		.cmn--btn {
+			padding-top: 9px;
+			padding-bottom: 9px;
+		}
+		@include breakpoint (max-xl) {
+			width: calc(100% / 2);
+		}
+		@include breakpoint (max-sm) {
+			width: calc(100% / 1);
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			left: 0px;
+			top: 15%;
+			bottom: 15%;
+			height: 70%;
+			width: 1px;
+			@include breakpoint (max-xl) {
+				display: none;
+			}
+		}
+		&:not(:last-child) {
+			&::before {
+				background-color: hsl(var(--border));
+				}
+			}
+		&:first-child {
+			&::before {
+				background: none;
+				}
+			}
+		.form--control {
+			padding-left: 58px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			height: 45px;
+			@include breakpoint (max-sm) {
+				padding-left: 50px;
+			}
+		}
+		.icon {
+			position: absolute;
+			left: 30px;
+			top: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 19px;
+			@include breakpoint (max-sm) {
+				left: 25px;
+			}
+		}
+	}
+}
+.restaurant-item {
+	&__thumb {
+		margin-bottom: 20px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		img {
+			width: 100%;
+		}
+		.open-close {
+			position: absolute;
+			right: 24px;
+			top: 24px;
+			padding: 11px 25px;
+			line-height: 1;
+		}
+	}
+	&__content {
+		.title {
+			margin-bottom: 15px;
+		}
+		.location {
+			color: hsl(var(--dark) / 0.6);
+			@include breakpoint (max-sm) {
+				font-size: 15px
+			}
+			.location-icon {
+				padding-right: 10px;
+				font-size: 18px;
+				line-height: 1;
+				@include breakpoint (max-sm) {
+					padding-right: 5px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	&:hover {
+		.restaurant-item__thumb img {
+			transform: scale(1.1);
+		}
+	}
+}
+// Restaurant Section Ends Here
