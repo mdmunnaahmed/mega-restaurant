@@ -1598,7 +1598,7 @@ input:-webkit-autofill:focus {
         left: 0px;
         opacity: 0;
         visibility: hidden;
-        min-width: 100px;
+        min-width: 180px;
         padding: 7px 0px;
         transition: all ease 0.3s;
         transform: translateY(15px);
