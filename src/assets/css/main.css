@@ -1659,11 +1659,18 @@ input:-webkit-autofill:focus {
         border-radius: 20px;
         overflow-y: auto;
         background: hsl(var(--base));
-        display: none;
+        transition: 0.3s;
+        visibility: hidden;
+        opacity: 0;
+        display: inline-block;
+        transform: scaleY(0.5);
+        transform-origin: top;
     }
 
     .menu.active {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
     }
 
     .menu .has-sub-menu {
@@ -1709,12 +1716,10 @@ input:-webkit-autofill:focus {
 
 .header-trigger.active span::before {
     transform: rotate(-45deg) translate(-11px, 0px);
-    background: hsl(var(--white));
 }
 
 .header-trigger.active span::after {
     transform: rotate(45deg) translate(-11px, 0px);
-    background: hsl(var(--white));
 }
 
 .header-trigger span {

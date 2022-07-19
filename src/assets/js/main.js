@@ -12,7 +12,8 @@ if (trigger || dropdown) {
 	trigger.each(function () {
 		$(this).on("click", function (e) {
 			e.stopPropagation();
-			dropdown.addClass('active');
+			dropdown.toggleClass("active");
+			trigger.toggleClass("active");
 		});
 	});
 	dropdown.each(function () {
@@ -22,7 +23,8 @@ if (trigger || dropdown) {
 	});
 	$(document).on("click", function () {
 		if (parseInt(screenSize) < parseInt(991)) {
-			dropdown.removeClass('active');
+			dropdown.removeClass("active");
+			trigger.removeClass("active");
 		}
 	});
 }
@@ -124,7 +126,6 @@ $(".brand-slider").slick({
 	],
 });
 
-
 //Faq
 $(".faq-item__title").on("click", function (e) {
 	var element = $(this).parent(".faq-item");
@@ -140,7 +141,6 @@ $(".faq-item__title").on("click", function (e) {
 		element.siblings(".faq-item").find(".faq-item__content").slideUp(300, "swing");
 	}
 });
-
 
 // Active Path Active
 var path = location.pathname.split("/");
