@@ -12,7 +12,7 @@ if (trigger || dropdown) {
 	trigger.each(function () {
 		$(this).on("click", function (e) {
 			e.stopPropagation();
-			dropdown.slideToggle();
+			dropdown.addClass('active');
 		});
 	});
 	dropdown.each(function () {
@@ -22,7 +22,7 @@ if (trigger || dropdown) {
 	});
 	$(document).on("click", function () {
 		if (parseInt(screenSize) < parseInt(991)) {
-			dropdown.slideUp();
+			dropdown.removeClass('active');
 		}
 	});
 }

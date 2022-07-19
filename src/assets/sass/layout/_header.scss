@@ -24,6 +24,9 @@
 	@include breakpoint(sm) {
 		position: relative;
 	}
+	@include breakpoint(max-lg) {
+		position: relative;
+	}
 }
 .logo {
 	img {
@@ -92,7 +95,7 @@
 			display: block;
 			position: relative;
 			color: #838383;
-			padding: 7px 20px;
+			padding: 5px 20px;
 		}
 	}
 	.menu-close {
@@ -124,7 +127,8 @@
 		left: 0px;
 		opacity: 0;
 		visibility: hidden;
-		min-width: 220px;
+		min-width: 100px;
+		padding: 7px 0px;
 		@include transition;
 		transform: translateY(15px);
 		box-shadow: 0 3px 12px 3px hsl(var(--dark) / 0.05);
@@ -169,26 +173,21 @@
 
 // Mobile Menu
 @include breakpoint(max-lg) {
-	.menu > li {
-		&:nth-last-child(1) {
-			border-bottom: none;
-		}
-		&:nth-child(1) {
-			border-bottom: none;
-		}
-	}
 	.menu {
 		position: absolute;
 		top: 100%;
-		left: 0;
-		padding: 30px;
+		right: 0;
+		padding: 0px 20px;
 		max-height: calc(100vh - 50px);
-		min-width: 200px;
-		width: 100%;
+		min-width: 175px;
 		transform-origin: top;
+		border-radius: 20px;
 		overflow-y: auto;
 		background: hsl(var(--base));
 		display: none;
+		&.active {
+			display: block;
+		}
 		.has-sub-menu {
 			margin-right: 0;
 		}
@@ -198,15 +197,14 @@
 			}
 		}
 		li {
-			padding: 3px 0;
 			width: 100%;
-			border-bottom: 1px solid hsl(var(--white) / 0.2);
-			&:nth-last-child(1) {
-				border-bottom: none;
-			}
 			a {
 				padding-left: 0;
 				color: hsl(var(--white));
+				font-size: 15px;
+				&.active {
+					color: hsl(var(--dark));
+				}
 			}
 			&.has-sub-menu {
 				a {
