@@ -127,7 +127,7 @@
 		left: 0px;
 		opacity: 0;
 		visibility: hidden;
-		min-width: 180px;
+		min-width: 210px;
 		padding: 7px 0px;
 		@include transition;
 		transform: translateY(15px);
@@ -179,16 +179,16 @@
 		right: 0;
 		padding: 0px 20px;
 		max-height: calc(100vh - 50px);
-		min-width: 175px;
+		min-width: 200px;
 		transform-origin: top;
 		border-radius: 20px;
 		overflow-y: auto;
 		background: hsl(var(--base));
-		transition: .3s;
+		transition: 0.3s;
 		visibility: hidden;
 		opacity: 0;
 		display: inline-block;
-		transform: scaleY(.5);
+		transform: scaleY(0.5);
 		transform-origin: top;
 		&.active {
 			visibility: visible;

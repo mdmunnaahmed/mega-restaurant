@@ -1,6 +1,77 @@
 <!-- meta tags and other links -->
-@@include('../partial-html/_template-top.html')
-@@include('../partial-html/_header.html')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrale de réservation de restaurants pour groupes</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+<div class="header">
+    <div class="container">
+        <div class="header-bottom">
+            <div class="header-bottom-area align-items-center">
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void(0)">Pages</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="services.html">Services</a>
+                                <a href="meeting-event.html">Réunions et événements</a>
+                                <a href="regular-meals.html">Repas réguliers</a>
+                                <a href="plan-meals.html">Planifiez vos repas</a>
+                                <a href="partner.html">Become Partner</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="restaurant.html">Food Order</a>
+                    </li>
+                    <li>
+                        <a href="receipts.html">Receipts</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="partner.html">Become Partner</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="sign-in.html">Log In</a>
+                    </li>
+                </ul>
+                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center order-3">
+                    <div class="header-trigger">
+                        <span></span>
+                    </div>
+                </div>
+                <a href="services.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+                <div class="header-right d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-end">
+                    <a href="cart.html" class="fs--20px position-relative"><i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">01</span>
+                    </a>
+                    <a href="partner.html" class="btn btn--light btn--md d-none d-sm-block">Become Partner</a>
+                    <a href="sign-in.html" class="btn btn--base btn--md d-none d-sm-block">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Banner Section Starts Here -->
 <div class="banner-section">
@@ -32,7 +103,7 @@
                 <div class="section-header text-center">
                     <h2 class="section-header__title">Vous pouvez compter sur nous pour toutes vos réunions.</h2>
                     <p>La plus large offre de restauration, des plateaux sandwichs aux déjeuners avec apéritifs et buffets chauds.
-                    Peu importe votre budget, votre alimentation ou vos préférences, notre équipe dévouée est là pour vous aider.</p>
+                        Peu importe votre budget, votre alimentation ou vos préférences, notre équipe dévouée est là pour vous aider.</p>
                 </div>
             </div>
         </div>
@@ -68,7 +139,7 @@
                     <div class="common-card__content">
                         <h4 class="common-card__content-title"><a href="">Box de déjeuner</a></h4>
                         <p>Les parts emballées individuellement sont idéales pour la distanciation sociale : il n'y a pas de couvert à partager et les salariés peuvent
-                        rapidement se servir et les emporter.
+                            rapidement se servir et les emporter.
                         </p>
                     </div>
                 </div>
@@ -81,7 +152,7 @@
                     <div class="common-card__content">
                         <h4 class="common-card__content-title"><a href="">Restauration du petit-déjeuner</a></h4>
                         <p>Préparez vos collègues ou clients pour la journée avec des pâtisseries fraîches, des tranches de fruits, des yaourts, des bagels ou encore des
-                        smoothies.
+                            smoothies.
                         </p>
                     </div>
                 </div>
@@ -94,7 +165,7 @@
                     <div class="common-card__content">
                         <h4 class="common-card__content-title"><a href="">Restauration sous forme de buffet</a></h4>
                         <p>Les menus de sous forme de buffet sont idéaux pour les déjeuners d'entreprise, les fêtes, les événements de l'après-midi, les réunions de bureau toute
-                        la journée et les conférences.
+                            la journée et les conférences.
                         </p>
                     </div>
                 </div>
@@ -126,7 +197,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="section-header text-center">
-                    <h2 class="section-header__title">We have partners all over the Cities</h2>
+                    <h2 class="section-header__title">+ de 100 marques ont rejoint la plateforme !</h2>
                 </div>
             </div>
         </div>
@@ -185,7 +256,8 @@
                         <div class="section-header mb-4">
                             <p class="section-header__subtitle">POUR DES LIVRAISONS GARANTIES DANS LES DÉLAIS</p>
                             <h2 class="section-header__title">Suivez vos commandes en temps réel</h2>
-                            <p class="mb-3">Vous recevrez des notifications en temps réel à partir du moment où : votre commande est passée, est en cours de traitement et vous est expédiée.<p>
+                            <p class="mb-3">Vous recevrez des notifications en temps réel à partir du moment où : votre commande est passée, est en cours de traitement et vous est expédiée.
+                            <p>
                             <p>Notre application affiche également l’estimation d’heures d'arrivée afin que vous sachiez quand votre commande sera livrée.
                             </p>
                         </div>
@@ -218,7 +290,7 @@
                     <p class="section-header__subtitle">FILTRES ALIMENTAIRES</p>
                     <h2 class="section-header__title">Des options pour tous les goûts et tous les régimes</h2>
                     <p>Si vous voulez vous démarquer un peu plus, il existe une nouvelle façon de filtrer la liste des restaurants disponibles en fonction de certains
-                    critères, notamment la livraison, les problèmes alimentaires spécifiques et les limites de prix.</p>
+                        critères, notamment la livraison, les problèmes alimentaires spécifiques et les limites de prix.</p>
                     <a href="#0" class="cmn--btn mt-4">Demandez un devis</a>
                 </div>
             </div>
@@ -295,8 +367,79 @@
 <!-- Filter Section Ends Here -->
 
 
-@@include('../partial-html/_footer.html')
-@@include('../partial-html/_template-bottom.html')
+<!-- Footer Section Starts Here -->
+<footer class="footer-section bg--base">
+    <div class="footer-top pt-50 pb-50">
+        <div class="container">
+            <div class="row gy-sm-5 justify-content-sm-between">
+                <div class="col-lg-3">
+                    <div class="footer-widget border-0">
+                        <a href="services.html" class="logo"><img src="assets/images/logo-white.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Legal</h4>
+                        <ul class="links">
+                            <li><a href="notice.html">Legal Notice</a></li>
+                            <li><a href="data-policy.html">Data Privacy</a></li>
+                            <li><a href="conditions.html">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">About</h4>
+                        <ul class="links">
+                            <li><a href="notice.html">Welcome</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="conditions.html">Terms and conditions</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Company</h4>
+                        <ul class="links">
+                            <li><a href="sign-up.html">Join us now</a></li>
+                            <li><a href="about.html">Who we are?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Social Networks</h4>
+                        <ul class="links">
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">LinkdIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="text-white text-center">
+                Copyright &copy; 2022 All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section Ends Here -->
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Pluglin Link -->
+<script src="assets/js/lib/slick.min.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
