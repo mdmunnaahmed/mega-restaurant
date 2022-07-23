@@ -314,3 +314,37 @@
 	}
 }
 // Restaurant Section Ends Here
+
+// Restaurant Details Section Starts Here
+.cmn--tab {
+	padding: 15px 40px;
+	background: hsl(var(--light));
+	li {
+		a {
+			padding: 10px 25px;
+			border-radius: 50px;
+			&.active {
+				background-color: hsl(var(--dark));
+				color: hsl(var(--white));
+			}
+		}
+	}
+}
+.search-box-two {
+	.search-button {
+		position: absolute;
+		z-index: 2;
+		border: 0;
+		left: 0;
+		top: 0;
+		height: 100%;
+		@extend %flex-center;
+	}
+	.form--control {
+		padding-left: 50px;
+	}
+}
+.restaurant-details-wrapper {
+	padding-inline: 40px;
+}
+// Restaurant Details Section Ends Here

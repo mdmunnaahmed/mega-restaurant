@@ -154,7 +154,8 @@
 	}
 }
 .guide-thumb {
-	&::before, &::after {
+	&::before,
+	&::after {
 		height: 340px;
 		width: 325px;
 		@include breakpoint(max-sm) {
@@ -167,15 +168,22 @@
 		left: 100px;
 		height: 200px;
 		width: 280px;
-		@include breakpoint (max-lg) {
+		@include breakpoint(max-lg) {
 			left: 205px;
 			width: 350px;
 			height: 100px;
 		}
-		@include breakpoint (max-md) {
+		@include breakpoint(max-md) {
 			width: 200px;
 			left: 50px;
 		}
 	}
 }
 // Banner Section Ends Here
+
+// Inner Banner Starts Here
+.inner-banner {
+	.inner-banner-thumb {
+	}
+}
+// Inner Banner Ends Here

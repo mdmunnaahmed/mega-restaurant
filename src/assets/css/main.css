@@ -253,6 +253,10 @@ ul {
     padding-top: clamp(35px, 6vw, 50px);
 }
 
+.pt-40 {
+    padding-top: clamp(30px, 6vw, 40px);
+}
+
 .pb-120 {
     padding-bottom: clamp(70px, 6vw, 120px);
 }
@@ -273,9 +277,20 @@ ul {
     padding-bottom: clamp(35px, 6vw, 50px);
 }
 
+.pb-40 {
+    padding-bottom: clamp(30px, 6vw, 40px);
+}
+
 .menu, .header-bottom-area, .pagination, .list.list-column {
     display: flex;
     flex-wrap: wrap;
+}
+
+.search-box-two .search-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-trigger span::after, .header-trigger span::before, .header, .custom--checkbox label::before, .btn,
@@ -2471,5 +2486,37 @@ input:-webkit-autofill:focus {
 
 .restaurant-item:hover .restaurant-item__thumb img {
     transform: scale(1.1);
+}
+
+.cmn--tab {
+    padding: 15px 40px;
+    background: hsl(var(--light));
+}
+
+.cmn--tab li a {
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.cmn--tab li a.active {
+    background-color: hsl(var(--dark));
+    color: hsl(var(--white));
+}
+
+.search-box-two .search-button {
+    position: absolute;
+    z-index: 2;
+    border: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.search-box-two .form--control {
+    padding-left: 50px;
+}
+
+.restaurant-details-wrapper {
+    padding-inline: 40px;
 }
 /*# sourceMappingURL=main.css.map */

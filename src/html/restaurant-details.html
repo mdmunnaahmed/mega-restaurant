@@ -1,0 +1,38 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
+@@include('../partial-html/_inner-hero.html')
+
+
+<!-- Restaurant Details Starts Here -->
+<div class="restaurant-details">
+    <div class="container">
+        <ul class="cmn--tab nav nav-tabs border-0">
+            <li><a data-bs-toggle="tab" class="active" href="#order-online">Order Online</a></li>
+            <li><a data-bs-toggle="tab" href="#insights">Insights</a></li>
+            <li><a data-bs-toggle="tab" href="#reviews-ratings">Reviews & Ratings</a></li>
+            <li><a data-bs-toggle="tab" href="#online-booking">Online Booking</a></li>
+        </ul>
+        <div class="restaurant-details-wrapper bg-white pt-60 pb-100">
+            <div class="tab-content">
+                <div class="tab-pane show fade active" id="order-online">
+                    <h2 class="title mb-3 mb-sm-4">Order your food from Le Maximilien</h2>
+                    <form class="search-box-two">
+                        <div class="form-group position-relative">
+                            <button class="search-button border-0 bg-transparent px-3 fs--20px"><i class="las la-search"></i></button>
+                            <input type="text" class="form-control form--control" placeholder="Search your food here...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Restaurant Details Ends Here -->
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>
