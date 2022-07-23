@@ -317,18 +317,37 @@
 
 // Restaurant Details Section Starts Here
 .cmn--tab {
-	padding: 15px 40px;
+	padding: 15px 30px;
 	border-radius: 0 0 10px 10px;
+	@include breakpoint(max-md) {
+		padding-inline: 15px;
+	}
 	&.style-two {
 		padding: 30px 0px;
 		a {
 			padding: 7px 16px;
+			@include breakpoint(max-md) {
+				padding: 6px 16px;
+				font-size: 14px;
+			}
+			@include breakpoint(max-sm) {
+				padding: 4px 12px;
+				font-size: 14px;
+			}
 		}
 	}
 	li {
 		a {
 			padding: 10px 25px;
 			border-radius: 50px;
+			@include breakpoint(max-md) {
+				padding: 6px 16px;
+				font-size: 14px;
+			}
+			@include breakpoint(max-sm) {
+				padding: 5px 12px;
+				font-size: 14px;
+			}
 			&.active {
 				background-color: hsl(var(--dark));
 				color: hsl(var(--white));
@@ -350,12 +369,9 @@
 		padding-left: 50px;
 	}
 }
-.restaurant-details-wrapper {
-	padding-inline: 40px;
-}
 .details-item {
 	padding: 14px;
-	border: 2px solid  hsl(var(--border));;
+	border: 2px solid hsl(var(--border));
 	border-radius: 10px;
 	&:not(:last-child) {
 		margin-bottom: 12px;
@@ -365,30 +381,22 @@
 		overflow: hidden;
 		width: 160px;
 		height: 160px;
+		@include breakpoint(max-xl) {
+			width: 130px;
+			height: 130px;
+		}
 		img {
+			width: 100%;
 			object-fit: cover;
 		}
 	}
-}
-.remove-btn, .oder-btn {
-	padding: 11px 30px;
-	background: hsl(var(--dark) / 0.6);
-	color: hsl(var(--white));
-	border-radius: 10px;
-	&:hover {
-		color: hsl(var(--white));
-		
-	}
-}
-.oder-btn {
-	background: hsl(var(--base));
-}
-.details-content-wrapper {
-	width: calc(100% - 160px);
-	padding-left: 20px;
-	padding-right: 5px;
-	.details-item__content {
-		padding-right: 20px;
+
+	&__content {
+		.title {
+			@include breakpoint(max-sm) {
+				font-size: 18px;
+			}
+		}
 		ul {
 			span {
 				color: hsl(var(--dark));
@@ -400,33 +408,71 @@
 		}
 	}
 }
+.details-content-wrapper {
+	width: calc(100% - 160px);
+	padding-left: 20px;
+	padding-right: 5px;
+}
+.remove-btn,
+.order-btn {
+	padding: 11px 30px;
+	background: hsl(var(--dark) / 0.6);
+	color: hsl(var(--white));
+	border-radius: 10px;
+	@include breakpoint(max-md) {
+		width: 100%;
+		text-align: center;
+	}
+	&:hover {
+		color: hsl(var(--white));
+	}
+}
+.order-btn {
+	background: hsl(var(--base));
+}
+.progress-wrapper {
+	max-width: 350px;
+	.progress {
+		border-radius: 25px;
+		.progress-bar {
+			background-color: hsla(47, 85%, 54%, 1);
+		}
+	}
+}
 .ratting {
 	margin: 0 -5px;
 	padding: 13px 18px;
 	border-radius: 10px;
 	max-width: 282px;
-	background: hsl(var(--dark) / 0.1);;
+	background: hsl(var(--dark) / 0.1);
 	li {
 		padding: 0 5px;
 		font-size: 20px;
 		color: hsl(var(--dark) / 0.5);
+		i {
+			color: hsla(47, 85%, 54%, 1);
+		}
 		&:last-child {
 			font-size: 16px;
 			padding-left: 8px;
 		}
 	}
 }
-.ratting-text {
-	padding: 20px 0;
-}
+
 .cart-info-wrapper {
 	border-radius: 10px;
 	box-shadow: 0px 2px 30px hsl(var(--dark) / 0.1);
-	overflow: hidden;
+	@include breakpoint(lg) {
+		margin-top: -250px;
+		position: sticky;
+		top: 100px;
+	}
 	.cart-info-top {
 		padding: 25px 30px;
-		.title {
-			margin-bottom: 20px;
+		background-color: hsl(var(--white));
+		border-radius: 10px 10px 0 0;
+		@include breakpoint(max-xl) {
+			padding-inline: 20px;
 		}
 		li {
 			padding: 5px 0px;
@@ -436,8 +482,11 @@
 		}
 	}
 	.cart-info-bottom {
-		padding: 30px;
-		background-color: hsl(var(--dark) / 0.04);
+		padding: 25px 30px;
+		background-color: hsl(var(--dark) / 0.025);
+		@include breakpoint(max-xl) {
+			padding-inline: 20px;
+		}
 		ul {
 			li {
 				padding: 7px 0px;
@@ -445,12 +494,12 @@
 		}
 	}
 }
-.oder-list-wrapper {
+.order-list-wrapper {
 	border-bottom: 1px solid hsl(var(--border));
 	padding: 20px 0;
 	margin-bottom: 10px;
 }
-.oder-item {
+.order-item {
 	padding: 10px;
 	border: 1px solid hsl(var(--border));
 	border-radius: 10px;
@@ -467,11 +516,14 @@
 	&__content {
 		.title {
 			line-height: 1;
+			@include breakpoint(max-sm) {
+				font-size: 14px;
+			}
 		}
 		padding-left: 12px;
 		width: calc(100% - 60px);
 		.product-number {
-			width: 20px;
+			width: 25px;
 			border: none;
 			text-align: center;
 			background-color: transparent;
@@ -482,8 +534,8 @@
 		}
 		.minus-plus {
 			cursor: pointer;
-			color: hsl(var(--dark) / .5);
-			}
+			color: hsl(var(--dark) / 0.5);
+		}
 	}
 }
 // Restaurant Details Section Ends Here

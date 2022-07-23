@@ -165,3 +165,21 @@ nowId.on("change", function (e) {
 		scheduleId.parent(".form-group").siblings(".form-select").attr("disabled", "");
 	}
 });
+
+$("#details-item-remove-btn").on("click", function () {
+	$("#details-item-remove-btn").closest(".details-item").remove();
+});
+
+$(".minus-plus").on("click", function () {
+	var oldValue = $(this).siblings("input").val();
+	if ($(this).hasClass("cart-plus")) {
+		var newVal = parseFloat(oldValue) + 01;
+	} else {
+		if (oldValue > 1) {
+			var newVal = parseFloat(oldValue) - 01;
+		} else {
+			newVal = 01;
+		}
+	}
+	$(this).siblings("input").val(newVal);
+});

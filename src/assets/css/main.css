@@ -4,7 +4,7 @@
     --heading-font: "Proxima Nova", sans-serif;
     --body-font: "Proxima Nova", sans-serif;
     --heading: 0 0% 0%;
-    --body: 223 22% 1%;
+    --body: 223 22% 25%;
     --border: 0 0% 90%;
     --base-h: 347;
     --base-s: 72%;
@@ -2100,8 +2100,17 @@ input:-webkit-autofill:focus {
     }
 }
 
-.inner-banner .inner-banner-thumb {
-    margin-top: 33px;
+@media (max-width: 767px) {
+    .inner-banner .inner-banner-thumb img {
+        min-height: 230px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .inner-banner .inner-banner-thumb {
+        margin-top: 33px;
+    }
 }
 
 .section-header {
@@ -2493,8 +2502,14 @@ input:-webkit-autofill:focus {
 }
 
 .cmn--tab {
-    padding: 15px 40px;
+    padding: 15px 30px;
     border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 767px) {
+    .cmn--tab {
+        padding-inline: 15px;
+    }
 }
 
 .cmn--tab.style-two {
@@ -2505,9 +2520,37 @@ input:-webkit-autofill:focus {
     padding: 7px 16px;
 }
 
+@media (max-width: 767px) {
+    .cmn--tab.style-two a {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cmn--tab.style-two a {
+        padding: 4px 12px;
+        font-size: 14px;
+    }
+}
+
 .cmn--tab li a {
     padding: 10px 25px;
     border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+    .cmn--tab li a {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cmn--tab li a {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
 }
 
 .cmn--tab li a.active {
@@ -2528,10 +2571,6 @@ input:-webkit-autofill:focus {
     padding-left: 50px;
 }
 
-.restaurant-details-wrapper {
-    padding-inline: 40px;
-}
-
 .details-item {
     padding: 14px;
     border: 2px solid hsl(var(--border));
@@ -2549,23 +2588,31 @@ input:-webkit-autofill:focus {
     height: 160px;
 }
 
+@media (max-width: 1199px) {
+    .details-item__thumb {
+        width: 130px;
+        height: 130px;
+    }
+}
+
 .details-item__thumb img {
+    width: 100%;
     object-fit: cover;
 }
 
-.remove-btn, .oder-btn {
-    padding: 11px 30px;
-    background: hsl(var(--dark)/0.6);
-    color: hsl(var(--white));
-    border-radius: 10px;
+@media (max-width: 575px) {
+    .details-item__content .title {
+        font-size: 18px;
+    }
 }
 
-.remove-btn:hover, .oder-btn:hover {
-    color: hsl(var(--white));
+.details-item__content ul span {
+    color: hsl(var(--dark));
+    font-weight: 700;
 }
 
-.oder-btn {
-    background: hsl(var(--base));
+.details-item__content ul span.price {
+    color: hsl(var(--base));
 }
 
 .details-content-wrapper {
@@ -2574,17 +2621,41 @@ input:-webkit-autofill:focus {
     padding-right: 5px;
 }
 
-.details-content-wrapper .details-item__content {
-    padding-right: 20px;
+.remove-btn,
+.order-btn {
+    padding: 11px 30px;
+    background: hsl(var(--dark)/0.6);
+    color: hsl(var(--white));
+    border-radius: 10px;
 }
 
-.details-content-wrapper .details-item__content ul span {
-    color: hsl(var(--dark));
-    font-weight: 700;
+@media (max-width: 767px) {
+    .remove-btn,
+.order-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.details-content-wrapper .details-item__content ul span.price {
-    color: hsl(var(--base));
+.remove-btn:hover,
+.order-btn:hover {
+    color: hsl(var(--white));
+}
+
+.order-btn {
+    background: hsl(var(--base));
+}
+
+.progress-wrapper {
+    max-width: 350px;
+}
+
+.progress-wrapper .progress {
+    border-radius: 25px;
+}
+
+.progress-wrapper .progress .progress-bar {
+    background-color: #edc226;
 }
 
 .ratting {
@@ -2601,27 +2672,38 @@ input:-webkit-autofill:focus {
     color: hsl(var(--dark)/0.5);
 }
 
+.ratting li i {
+    color: #edc226;
+}
+
 .ratting li:last-child {
     font-size: 16px;
     padding-left: 8px;
 }
 
-.ratting-text {
-    padding: 20px 0;
-}
-
 .cart-info-wrapper {
     border-radius: 10px;
     box-shadow: 0px 2px 30px hsl(var(--dark)/0.1);
-    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .cart-info-wrapper {
+        margin-top: -250px;
+        position: sticky;
+        top: 100px;
+    }
 }
 
 .cart-info-wrapper .cart-info-top {
     padding: 25px 30px;
+    background-color: hsl(var(--white));
+    border-radius: 10px 10px 0 0;
 }
 
-.cart-info-wrapper .cart-info-top .title {
-    margin-bottom: 20px;
+@media (max-width: 1199px) {
+    .cart-info-wrapper .cart-info-top {
+        padding-inline: 20px;
+    }
 }
 
 .cart-info-wrapper .cart-info-top li {
@@ -2633,31 +2715,37 @@ input:-webkit-autofill:focus {
 }
 
 .cart-info-wrapper .cart-info-bottom {
-    padding: 30px;
-    background-color: hsl(var(--dark)/0.04);
+    padding: 25px 30px;
+    background-color: hsl(var(--dark)/0.025);
+}
+
+@media (max-width: 1199px) {
+    .cart-info-wrapper .cart-info-bottom {
+        padding-inline: 20px;
+    }
 }
 
 .cart-info-wrapper .cart-info-bottom ul li {
     padding: 7px 0px;
 }
 
-.oder-list-wrapper {
+.order-list-wrapper {
     border-bottom: 1px solid hsl(var(--border));
     padding: 20px 0;
     margin-bottom: 10px;
 }
 
-.oder-item {
+.order-item {
     padding: 10px;
     border: 1px solid hsl(var(--border));
     border-radius: 10px;
 }
 
-.oder-item:not(:last-child) {
+.order-item:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.oder-item__thumb {
+.order-item__thumb {
     width: 60px;
     height: 60px;
     border-radius: 5px;
@@ -2665,28 +2753,34 @@ input:-webkit-autofill:focus {
     overflow: hidden;
 }
 
-.oder-item__content {
+.order-item__content {
     padding-left: 12px;
     width: calc(100% - 60px);
 }
 
-.oder-item__content .title {
+.order-item__content .title {
     line-height: 1;
 }
 
-.oder-item__content .product-number {
-    width: 20px;
+@media (max-width: 575px) {
+    .order-item__content .title {
+        font-size: 14px;
+    }
+}
+
+.order-item__content .product-number {
+    width: 25px;
     border: none;
     text-align: center;
     background-color: transparent;
 }
 
-.oder-item__content .product-number:focus {
+.order-item__content .product-number:focus {
     border: none;
     outline: none;
 }
 
-.oder-item__content .minus-plus {
+.order-item__content .minus-plus {
     cursor: pointer;
     color: hsl(var(--dark)/0.5);
 }

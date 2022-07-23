@@ -184,7 +184,15 @@
 // Inner Banner Starts Here
 .inner-banner {
 	.inner-banner-thumb {
-		margin-top: 33px;
+		@include breakpoint(max-md) {
+			img {
+				min-height: 230px;
+				object-fit: cover;
+			}
+		}
+		@include breakpoint(lg) {
+			margin-top: 33px;
+		}
 	}
 }
 // Inner Banner Ends Here
