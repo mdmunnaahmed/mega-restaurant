@@ -2759,10 +2759,10 @@ input:-webkit-autofill:focus {
 }
 
 .order-item__content .title {
-    line-height: 1;
+    line-height: 1.3;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1199px) {
     .order-item__content .title {
         font-size: 14px;
     }
