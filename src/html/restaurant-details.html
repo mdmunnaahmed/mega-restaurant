@@ -274,47 +274,52 @@
                             </ul>
                         </div>
                         <div class="cart-info-bottom">
-                            <h4 class="title fw-semibold">Your Order</h4>
-                            <div class="order-list-wrapper">
-                                <div class="order-item d-flex flex-wrap align-items-center">
-                                    <div class="order-item__thumb">
-                                        <img src="assets/images/thumb/order-thumb.png" alt="thumb">
+                            <div class="cart-info-bottom-inner">
+                                <h4 class="title fw-semibold d-none d-lg-block">Your Order</h4>
+
+                                <p class="d-flex justify-content-between fw-semibold d-lg-none"><span>Total</span> <span>£5.10</span></li>
+
+                                <div class="order-list-wrapper">
+                                    <div class="order-item d-flex flex-wrap align-items-center">
+                                        <div class="order-item__thumb">
+                                            <img src="assets/images/thumb/order-thumb.png" alt="thumb">
+                                        </div>
+                                        <div class="order-item__content">
+                                            <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text--base fw-semibold">£5.10</span>
+                                                <form action="#" class="d-flex align-items-center">
+                                                    <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
+                                                    <input type="text" value="1" class="product-number mx-1">
+                                                    <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="order-item__content">
-                                        <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="text--base fw-semibold">£5.10</span>
-                                            <form action="#" class="d-flex align-items-center">
-                                                <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
-                                                <input type="text" value="1" class="product-number mx-1">
-                                                <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
-                                            </form>
+                                    <div class="order-item d-flex flex-wrap align-items-center">
+                                        <div class="order-item__thumb">
+                                            <img src="assets/images/thumb/order-thumb.png" alt="thumb">
+                                        </div>
+                                        <div class="order-item__content">
+                                            <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text--base fw-semibold">£5.10</span>
+                                                <form action="#" class="d-flex align-items-center">
+                                                    <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
+                                                    <input type="text" value="1" class="product-number mx-1">
+                                                    <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order-item d-flex flex-wrap align-items-center">
-                                    <div class="order-item__thumb">
-                                        <img src="assets/images/thumb/order-thumb.png" alt="thumb">
-                                    </div>
-                                    <div class="order-item__content">
-                                        <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="text--base fw-semibold">£5.10</span>
-                                            <form action="#" class="d-flex align-items-center">
-                                                <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
-                                                <input type="text" value="1" class="product-number mx-1">
-                                                <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                                <ul>
+                                    <li class="d-flex justify-content-between d-none d-lg-block"><span>Subtotal</span> <span>£5.10</span></li>
+                                    <li class="d-flex justify-content-between d-none d-lg-block"><span>Delivery fee</span> <span>Free</span></li>
+                                    <li class="d-flex justify-content-between d-none d-lg-block fw-semibold"><span>Total</span> <span>£5.10</span></li>
+                                    <li><a href="#0" class="cmn--btn d-block text-center">Checkout Now</a></li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li class="d-flex justify-content-between"><span>Subtotal</span> <span>£5.10</span></li>
-                                <li class="d-flex justify-content-between"><span>Delivery fee</span> <span>Free</span></li>
-                                <li class="d-flex justify-content-between fw-semibold"><span>Total</span> <span>£5.10</span></li>
-                                <li><a href="#0" class="cmn--btn d-block text-center">Checkout Now</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -327,6 +332,27 @@
 
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')
+
+<script>
+    let sizeScreen = window.innerWidth;
+    window.addEventListener("resize", function (e) {
+        sizeScreen = window.innerWidth;
+    });
+    var footer = $('.footer-section');
+    window.addEventListener("resize", function (e) {
+        var contentHeight = $('.cart-info-bottom').innerHeight();
+        if (parseInt(sizeScreen) < parseInt(991)) {
+            footer.css('margin-bottom', contentHeight)
+        } else {
+            footer.css('margin-bottom', '0px')
+        }
+    })
+    if (parseInt(sizeScreen) < parseInt(991)) {
+        var contentHeight = $('.cart-info-bottom').innerHeight();
+        var footer = $('.footer-section');
+        footer.css('margin-bottom', contentHeight)
+    }
+</script>
 </body>
 
 </html>
