@@ -183,3 +183,18 @@ $(".minus-plus").on("click", function () {
 	}
 	$(this).siblings("input").val(newVal);
 });
+
+// Category Slider
+let categorySlider = $(".category__slider");
+if (categorySlider) {
+	categorySlider.slick({
+		swipeToSlide: false,
+		variableWidth: true,
+		infinite: false,
+		slidesToShow: 3,
+		swipeToSlide: true,
+		prevArrow: '<button type="button" class="category__slider-arrow category__slider-prev"><i class="las la-angle-left"></i></button>',
+		nextArrow: '<button type="button" class="category__slider-arrow category__slider-next"><i class="las la-angle-right"></i></button>',
+	});
+}
+
