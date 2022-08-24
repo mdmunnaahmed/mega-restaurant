@@ -126,6 +126,46 @@ $(".brand-slider").slick({
 	],
 });
 
+$(".brand-slider2").slick({
+	fade: false,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: true,
+	pauseOnHover: true,
+	centerMode: false,
+	dots: false,
+	arrows: false,
+	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+	responsive: [
+		{
+			breakpoint: 1199,
+			settings: {
+				slidesToShow: 4,
+			},
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 4,
+			},
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+	],
+});
+
 //Faq
 $(".faq-item__title").on("click", function (e) {
 	var element = $(this).parent(".faq-item");
@@ -198,3 +238,17 @@ if (categorySlider) {
 	});
 }
 
+// Reservation Sliser
+if (parseInt(screenSize) < parseInt(767)) {
+	$(".reservation-slider").slick({
+		fade: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		// autoplay: true,
+		pauseOnHover: true,
+		centerMode: false,
+		dots: false,
+		arrows: false,
+	});
+}

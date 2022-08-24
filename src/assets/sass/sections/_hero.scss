@@ -196,3 +196,40 @@
 	}
 }
 // Inner Banner Ends Here
+
+// New Added Css for Update 2 Home pages
+.banner-two {
+	padding-top: 130px;
+	padding-bottom: 100px;
+	overflow: hidden;
+	@include breakpoint(max-lg) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@include breakpoint(max-md) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+.banner-content-two {
+	&__left {
+		max-width: 500px;
+		@include breakpoint(max-xl) {
+			max-width: 450px;
+		}
+		.banner-title {
+			font-weight: 500;
+		}
+		.banner-text {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+	&__right {
+		width: calc(100% - 500px);
+		@include breakpoint(max-xl) {
+			width: calc(100% - 450px);
+		}
+	}
+}
+// New Added Css for Update 2 Home pages

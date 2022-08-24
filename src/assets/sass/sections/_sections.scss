@@ -11,6 +11,21 @@
 		margin-bottom: 16px;
 	}
 }
+.section-header-two {
+	text-align: center;
+	@include breakpoint(max-sm) {
+		padding-bottom: 30px;
+	}
+	&__title {
+		font-size: 40px;
+		@include breakpoint(max-md) {
+			font-size: 36px;
+		}
+		@include breakpoint(max-sm) {
+			font-size: 30px;
+		}
+	}
+}
 // Section Header Ends Here
 
 // Brand Section Starts Here
@@ -642,3 +657,95 @@
 	width: 100%;
 	object-fit: cover;
 }
+
+// Video Section
+.video-wrapper {
+	.video {
+		@include breakpoint(max-lg) {
+			height: 400px;
+		}
+		@include breakpoint(max-md) {
+			height: 380px;
+		}
+		@include breakpoint(max-sm) {
+			height: 320px;
+		}
+	}
+}
+// Video Section
+
+// Restaurant Section
+.btn--opacity-base {
+	color: hsl(var(--base));
+	background-color: hsl(var(--base) / 0.1);
+	border: 0;
+	&:hover {
+		color: hsl(var(--white));
+		background-color: hsl(var(--base));
+	}
+}
+.reservation-slider {
+	.slick-list {
+		padding-inline: 25px;
+	}
+	div[class*="col"] {
+		padding-inline: 7.5px;
+	}
+}
+.reservation-item {
+	padding: 16px;
+	padding-bottom: 0;
+	background: hsl(var(--white));
+	border: 1px solid hsl(var(--base));
+	border-radius: 20px;
+	text-align: center;
+	&__thumb {
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	&__content {
+		padding: 24px 10px;
+		&-title {
+			margin-bottom: 15px;
+		}
+	}
+	&:hover {
+		.reservation-item__thumb img {
+			transform: scale(1.1);
+		}
+	}
+}
+div[class*="col"] {
+	&:nth-of-type(3n + 2) {
+		@include breakpoint(lg) {
+			.reservation-item {
+				transform: translateY(24px);
+			}
+		}
+		@include breakpoint(xxl) {
+			.reservation-item {
+				transform: translateY(40px);
+			}
+		}
+	}
+}
+.custom-row-gap {
+	@include breakpoint(max-lg) {
+		--bs-gutter-y: 24px;
+	}
+	@include breakpoint(lg) {
+		--bs-gutter-y: 24px;
+		margin-bottom: 24px;
+	}
+	@include breakpoint(xxl) {
+		--bs-gutter-x: 64px;
+		--bs-gutter-y: 40px;
+		margin-bottom: 40px;
+	}
+}
+.container2 {
+	@include breakpoint(xxl) {
+		max-width: 1250px;
+	}
+}
+// Restaurant Section
