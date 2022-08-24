@@ -660,6 +660,9 @@
 
 // Video Section
 .video-wrapper {
+	max-width: 960px;
+	aspect-ratio: 1.77;
+	margin: 0 auto;
 	.video {
 		@include breakpoint(max-lg) {
 			height: 400px;
@@ -784,6 +787,7 @@ div[class*="col"] {
 		width: calc((100% / 3) - 7px);
 	}
 	&__icon {
+		max-height: 150px;
 		max-width: 150px;
 		object-fit: contain;
 		margin-inline: auto;
@@ -792,6 +796,10 @@ div[class*="col"] {
 		}
 		@include breakpoint(max-sm) {
 			max-width: 90px;
+		}
+		img {
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 	&__content {

@@ -3122,6 +3122,12 @@ input:-webkit-autofill:focus {
     object-fit: cover;
 }
 
+.video-wrapper {
+    max-width: 960px;
+    aspect-ratio: 1.77;
+    margin: 0 auto;
+}
+
 @media (max-width: 991px) {
     .video-wrapper .video {
         height: 400px;
@@ -3284,6 +3290,7 @@ input:-webkit-autofill:focus {
 }
 
 .skill-item__icon {
+    max-height: 150px;
     max-width: 150px;
     object-fit: contain;
     margin-inline: auto;
@@ -3299,6 +3306,11 @@ input:-webkit-autofill:focus {
     .skill-item__icon {
         max-width: 90px;
     }
+}
+
+.skill-item__icon img {
+    height: 100%;
+    object-fit: contain;
 }
 
 .skill-item__content-title {
