@@ -1,11 +1,54 @@
 <!-- meta tags and other links -->
 @@include('../partial-html/_template-top.html')
-@@include('../partial-html/_header.html')
+<div class="header">
+    <div class="container">
+        <div class="header-bottom">
+            <div class="header-bottom-area align-items-center">
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void(0)">Home</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="index.html">Home One</a>
+                                <a href="index-two.html">Home Two</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="restaurant.html">Food Order</a>
+                    </li>
+                    <li>
+                        <a href="receipts.html">Receipts</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="partner.html">Become Partner</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="sign-in.html">Log In</a>
+                    </li>
+                </ul>
+                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center order-3">
+                    <div class="header-trigger">
+                        <span></span>
+                    </div>
+                </div>
+                <a href="services.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+                <div class="header-right d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-end">
+                    <a href="cart.html" class="fs--20px position-relative"><i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">01</span>
+                    </a>
+                    <a href="partner.html" class="btn btn--light btn--md d-none d-sm-block">Become Partner</a>
+                    <a href="sign-in.html" class="btn btn--base btn--md d-none d-sm-block">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Banner Section -->
 <div class="banner-two">
     <div class="container">
-        <div class="d-flex flex-wrap banner-content-two">
+        <div class="d-flex flex-wrap banner-content-two align-items-center flex-wrap-reverse">
             <div class="banner-content-two__left">
                 <h1 class="banner-title">Restaurants pour groupes et organisation d’evenements</h1>
                 <p class="banner-text">Accédez à plus de 1000 restaurants de qualité partout en France.La réservation de restaurants traiteurs et évènements pour les entreprises. Commandez et faites-vous livrer au bureau. Privatisation Restaurant / Lieu.</p>
@@ -195,7 +238,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <select name="" id="" class="form-select form--control">
+                                <select name="" id="" class="form-select form--control bg--light">
                                     <option value="">Number of Staff...</option>
                                     <option value="">5</option>
                                     <option value="">10</option>
@@ -208,6 +251,12 @@
                             <div class="form-group">
                                 <input type="text" class="form-control form--control rounded-3" placeholder="Address *">
                             </div>
+                        </div>
+                    </div>
+                    <div class="pb-40"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea cols="30" rows="10" class="form-control form--control" placeholder="Is there anything else you’d like us to know?"></textarea>
                         </div>
                     </div>
                     <div class="pb-40"></div>

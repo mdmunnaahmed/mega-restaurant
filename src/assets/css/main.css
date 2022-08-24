@@ -2159,6 +2159,14 @@ input:-webkit-autofill:focus {
     }
 }
 
+@media (max-width: 991px) {
+    .banner-content-two__left {
+        max-width: 650px;
+        margin-inline: auto;
+        text-align: center;
+    }
+}
+
 .banner-content-two__left .banner-title {
     font-weight: 500;
 }
@@ -2175,6 +2183,13 @@ input:-webkit-autofill:focus {
 @media (max-width: 1199px) {
     .banner-content-two__right {
         width: calc(100% - 450px);
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-content-two__right {
+        width: 100%;
+        margin-bottom: 45px;
     }
 }
 
@@ -3042,8 +3057,10 @@ input:-webkit-autofill:focus {
     padding-inline: 25px;
 }
 
-.reservation-slider div[class*=col] {
-    padding-inline: 7.5px;
+@media (max-width: 767px) {
+    .reservation-slider div[class*=col] {
+        padding-inline: 7.5px;
+    }
 }
 
 .reservation-item {
@@ -3108,6 +3125,97 @@ input:-webkit-autofill:focus {
 @media (min-width: 1400px) {
     .container2 {
         max-width: 1250px;
+    }
+}
+
+.skill-wrapper {
+    gap: 70px 60px;
+}
+
+@media (max-width: 1399px) {
+    .skill-wrapper {
+        gap: 60px 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .skill-wrapper {
+        gap: 40px 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .skill-wrapper {
+        gap: 40px 10px;
+    }
+}
+
+.skill-item {
+    text-align: center;
+    width: calc(20% - 48px);
+}
+
+@media (max-width: 1399px) {
+    .skill-item {
+        width: calc(20% - 32px);
+    }
+}
+
+@media (max-width: 1199px) {
+    .skill-item {
+        width: calc(25% - 32px);
+    }
+}
+
+@media (max-width: 991px) {
+    .skill-item {
+        width: calc(25% - 24px);
+    }
+}
+
+@media (max-width: 767px) {
+    .skill-item {
+        width: calc(33.3333333333% - 24px);
+    }
+}
+
+@media (max-width: 575px) {
+    .skill-item {
+        width: calc(33.3333333333% - 7px);
+    }
+}
+
+.skill-item__icon {
+    max-width: 150px;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+@media (max-width: 991px) {
+    .skill-item__icon {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 575px) {
+    .skill-item__icon {
+        max-width: 90px;
+    }
+}
+
+.skill-item__content-title {
+    margin-top: 20px;
+}
+
+@media (max-width: 1399px) {
+    .skill-item__content-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .skill-item__content-title {
+        font-size: 16px;
     }
 }
 /*# sourceMappingURL=main.css.map */
