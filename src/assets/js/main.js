@@ -86,9 +86,9 @@ $(".scrollToTop").on("click", function () {
 	return false;
 });
 
-$(".brand-slider").slick({
+$(".sponsor-slider").slick({
 	fade: false,
-	slidesToShow: 6,
+	slidesToShow: 7,
 	slidesToScroll: 1,
 	infinite: true,
 	autoplay: true,
