@@ -816,7 +816,101 @@ div[class*="col"] {
 }
 // Skill Section
 
-// Sponsor Section Starts Here 
-.sponsor-item {
-	
+// Sponsor Section Starts Here
+.overview-thumb {
+	width: 75px;
+	height: 75px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 50%;
+	}
 }
+.overview-content {
+	.list {
+		li {
+			padding: 4px 0;
+		}
+	}
+}
+.overview-card {
+	padding: 35px;
+	border-radius: 10px;
+	box-shadow: 0 2px 20px hsl(var(--accent) / 0.1);
+	@include breakpoint(max-sm) {
+		padding: 25px;
+	}
+}
+.image-banner-thumb {
+	width: 100%;
+	@include breakpoint(md) {
+		height: 100%;
+	}
+	img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+		box-shadow: 0 2px 15px hsl(var(--accent) / 0.055);
+	}
+}
+.video-wrapper {
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
+	@include breakpoint(md) {
+		height: 100%;
+	}
+	width: 100%;
+	@include breakpoint(max-sm) {
+		video {
+		}
+	}
+}
+
+.bannerSlider {
+	.slick-track {
+		display: flex;
+		.slick-slide {
+			height: auto;
+		}
+	}
+}
+
+.call-to-action {
+	position: fixed;
+	bottom: 0;
+	padding: 15px;
+	background-color: hsl(var(--white));
+	border-top: 1px solid hsl(var(--border));
+	width: 100%;
+	z-index: 11;
+	display: flex;
+	gap: 15px 25px;
+	&__right {
+		min-width: 120px;
+	}
+}
+
+
+// Faq Item
+.faq-item {
+	text-align: center;
+	&:not(:last-child) {
+		margin-bottom: 50px;
+		@include breakpoint(max-lg) {
+			margin-bottom: 40px;
+		}
+		@include breakpoint(max-sm) {
+			margin-bottom: 30px;
+		}
+	}
+	&__title {
+		padding: 15px 0;
+		margin-bottom: 10px;
+	}
+	&__content {
+
+		text-align: left;
+	}
+}
+// Faq Item

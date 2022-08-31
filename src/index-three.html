@@ -1,4 +1,3 @@
-<!-- meta tags and other links -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +15,7 @@
 
     <!-- Plugin Link -->
     <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/magnific.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -24,113 +24,223 @@
 <body>
     <!-- Overlay -->
     <div class="overlay"></div>
-    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
-<div class="header">
-    <div class="container">
-        <div class="header-bottom">
-            <div class="header-bottom-area align-items-center">
-                <ul class="menu">
-                    <li>
-                        <a href="javascript:void(0)">Home</a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="index.html">Home One</a>
-                                <a href="index-two.html">Home Two</a>
-                                <a href="index-three.html">Home Three</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="restaurant.html">Food Order</a>
-                    </li>
-                    <li>
-                        <a href="receipts.html">Receipts</a>
-                    </li>
-                    <li class="d-sm-none">
-                        <a href="partner.html">Become Partner</a>
-                    </li>
-                    <li class="d-sm-none">
-                        <a href="sign-in.html">Log In</a>
-                    </li>
-                </ul>
-                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center order-3">
-                    <div class="header-trigger">
-                        <span></span>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="header-bottom">
+                <div class="header-bottom-area align-items-center">
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)">Home</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="index.html">Home One</a>
+                                    <a href="index-two.html">Home Two</a>
+                                    <a href="index-three.html">Home Three</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="restaurant.html">Food Order</a>
+                        </li>
+                        <li>
+                            <a href="receipts.html">Receipts</a>
+                        </li>
+                        <li class="d-sm-none">
+                            <a href="partner.html">Become Partner</a>
+                        </li>
+                        <li class="d-sm-none">
+                            <a href="sign-in.html">Log In</a>
+                        </li>
+                    </ul>
+                    <div class="header-trigger-wrapper d-flex d-lg-none align-items-center order-3">
+                        <div class="header-trigger">
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="services.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+                    <div class="header-right d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-end">
+                        <a href="cart.html" class="fs--20px position-relative"><i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">01</span>
+                        </a>
+                        <a href="partner.html" class="btn btn--light btn--md d-none d-sm-block">Become Partner</a>
+                        <a href="sign-in.html" class="btn btn--base btn--md d-none d-sm-block">Log In</a>
                     </div>
                 </div>
-                <a href="services.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
-                <div class="header-right d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-end">
-                    <a href="cart.html" class="fs--20px position-relative"><i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">01</span>
-                    </a>
-                    <a href="partner.html" class="btn btn--light btn--md d-none d-sm-block">Become Partner</a>
-                    <a href="sign-in.html" class="btn btn--base btn--md d-none d-sm-block">Log In</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Image Banner Section -->
+    <div class="image-banner pt-50">
+        <div class="container">
+            <div class="section-header-two pb-50">
+                <h2 class="section-header-two__title text-start">LE GUIDE DES GOURMETS, qui parait une fois par an, est mis
+                    gratuitement à la disposition des Comités d’entreprise </h2>
+            </div>
+            <div class="row g-1 bannerSlider">
+                <div class="col-sm-4">
+                    <div class="image-banner-thumb">
+                        <a href="assets/images/thumb/img-banner1.png" class="d-block"><img src="assets/images/thumb/img-banner1.png" alt="thumb"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="image-banner-thumb">
+                        <a href="assets/images/thumb/img-banner2.png" class="d-block"><img src="assets/images/thumb/img-banner2.png" alt="thumb"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="image-banner-thumb">
+                        <a href="assets/images/thumb/img-banner3.png" class="d-block"><img src="assets/images/thumb/img-banner3.png" alt="thumb"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- Image Banner Section -->
 
 
-<!-- Sponsor Section Starts Here -->
-<div class="sponsor-section">
-    <div class="container-fluid">
-        <div class="sponsor-slider">
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor1.png" alt="thumb">
+    <!-- Overview Section Starts -->
+    <div class="overview-section pt-80 pb-80">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-8 pe-lg-5">
+                    <div class="overview-content">
+                        <div class="d-flex justify-content-between gap-3  mb-3 mb-sm-4">
+                            <div class="left-content">
+                                <h3 class="title text--base mb-2 mb-sm-3">Vous êtes un restaurant, un traiteur, un hôtel...</h3>
+                                <p>6 heures - Proposée en Anglais, Espagnol et Français</p>
+                            </div>
+                            <div class="overview-thumb flex-shrink-0">
+                                <img src="assets/images/thumb/user.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="video-wrapper mb-4">
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe width="100%" height="100%" src="https://app.videas.fr/embed/5a6c699c-7406-4ed2-910c-5e4407c7c3fc/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" style="position: absolute; top: 0; left: 0"></iframe></div>
+                        </div>
+
+                        <h5 class="mb-3">Toute demande de référencement de votre établissement dans LE GUIDE
+                            DES GOURMETS doit nous parvenir avant le 15 septembre 2022.</h5>
+                        <p class="text--base mb-3 mb-sm-4">Les 40 000 Comités d’entreprise (Comités sociaux et économiques) totalisent un budget moyen
+                            annuel d'au moins 4 milliards d'euros.</p>
+                        <h5 class="mb-3">L'organisation des activités suivantes peut être proposée aux Comités, dans
+                            votre établissement:</h5>
+                        <ul class="list  opacity-75">
+                            <li>SOIRÉE D'ENTREPRISE ET PACKAGE</li>
+                            <li>REPAS D'AFFAIRES</li>
+                            <li>REPAS DE GROUPES</li>
+                            <li>PRIVATISATION RESTAURANT/LIEU</li>
+                            <li>SOIRÉE REPAS AVEC ANIMATIONS</li>
+                            <li>SOIRÉE DE FIN D'ANNÉE</li>
+                            <li>DÉJEUNERS DE FORMATION/SÉMINAIRE</li>
+                            <li>COCKTAIL & BUFFET</li>
+                        </ul>
+                        <p class="text--body opacity-75 mt-3 mt-sm-4">LE GUIDE DES GOURMETS est, entre autres, envoyé aux comités d’entreprise (comités sociaux et
+                            économiques):</p>
+                        <h6 class="mt-3 mt-sm-4">Sodexo; Groupe UP; Air France; Décathlon pro; Parc du Futuroscope; Kiabi; ANCV; ProwebCE;Editions
+                            Législatives; Orange; SACEM; Pierre Champion; Legrand Fiduciaire; Carrefour; Dell; Zoo de Beauval;
+                            King Jouet; Parfumerie Europe…</h6>
+                        <p class="mt-3 mt-sm-4 opacity-75">Toute l’année, un prix fixe pour une présence publicitaire: 375€ HT/An</p>
+                    </div>
                 </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor1.png" alt="thumb">
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor2.png" alt="thumb">
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor3.png" alt="thumb">
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor4.png" alt="thumb">
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor5.png" alt="thumb">
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor6.png" alt="thumb">
-                </div>
-            </div>
-            <div class="single-slide">
-                <div class="sponsor-item">
-                    <img src="assets/images/thumb/sponsor7.png" alt="thumb">
+                <div class="col-lg-4">
+                    <div class="overview-card">
+                        <h3 class="title">375€ HT/An</h3>
+                        <p class="mt-2 mb-sm-2 opacity-75">Toute l’année, un prix fixe pour une présence
+                            publicitaire:</p>
+                        <a href="" class="cmn--btn w-100 mt-3 text-center">Call to Action</a>
+                        <a href="" class="cmn--btn w-100 mt-3 text-center">Call to Action</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Sponsor Section Ends Here -->
+    <!-- Overview Section Ends -->
 
+    <!-- Call to action -->
+    <div class="call-to-action d-md-none justify-content-between">
+        <div class="call-to-action__left">
+            <h6 class="fs--16px">375€ HT/An</h6>
+            <p class="opacity-75 fs--14px">Toute l’année, un prix fixe pour une présence publicitaire:</p>
+        </div>
+        <div class="call-to-action__right">
+            <a href="" class="btn btn--base btn--md">Afficher les dates</a>
+        </div>
+    </div>
+    <!-- Call to action -->
 
-<!-- jQuery library -->
-<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+    <!-- Sponsor Section Starts Here -->
+    <div class="sponsor-section pb-60">
+        <div class="container-fluid">
+            <div class="sponsor-slider">
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor1.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor1.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor2.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor3.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor4.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor5.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor6.png" alt="thumb">
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="sponsor-item">
+                        <img src="assets/images/thumb/sponsor7.png" alt="thumb">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sponsor Section Ends Here -->
 
-<!-- Bootstrap 5 js -->
-<script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+    <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
 
-<!-- Pluglin Link -->
-<script src="assets/js/lib/slick.min.js"></script>
+    <!-- Bootstrap 5 js -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
 
-<!-- Main js -->
-<script src="assets/js/main.js"></script>
+    <!-- Pluglin Link -->
+    <script src="assets/js/lib/slick2.js"></script>
+    <script src="assets/js/lib/magnific.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $('.bannerSlider').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+        });
+    </script>
+
 </body>

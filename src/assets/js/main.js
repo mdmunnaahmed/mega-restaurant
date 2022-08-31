@@ -167,20 +167,20 @@ $(".brand-slider2").slick({
 });
 
 //Faq
-$(".faq-item__title").on("click", function (e) {
-	var element = $(this).parent(".faq-item");
-	if (element.hasClass("open")) {
-		element.removeClass("open");
-		element.find(".faq-item__content").removeClass("open");
-		element.find(".faq-item__content").slideUp(300, "swing");
-	} else {
-		element.addClass("open");
-		element.children(".faq-item__content").slideDown(300, "swing");
-		element.siblings(".faq-item").children(".faq-item__content").slideUp(300, "swing");
-		element.siblings(".faq-item").removeClass("open");
-		element.siblings(".faq-item").find(".faq-item__content").slideUp(300, "swing");
-	}
-});
+// $(".faq-item__title").on("click", function (e) {
+// 	var element = $(this).parent(".faq-item");
+// 	if (element.hasClass("open")) {
+// 		element.removeClass("open");
+// 		element.find(".faq-item__content").removeClass("open");
+// 		element.find(".faq-item__content").slideUp(300, "swing");
+// 	} else {
+// 		element.addClass("open");
+// 		element.children(".faq-item__content").slideDown(300, "swing");
+// 		element.siblings(".faq-item").children(".faq-item__content").slideUp(300, "swing");
+// 		element.siblings(".faq-item").removeClass("open");
+// 		element.siblings(".faq-item").find(".faq-item__content").slideUp(300, "swing");
+// 	}
+// });
 
 // Active Path Active
 var path = location.pathname.split("/");
@@ -251,4 +251,20 @@ if (parseInt(screenSize) < parseInt(767)) {
 		dots: false,
 		arrows: false,
 	});
+}
+
+// Category Slider
+if (parseInt(screenSize) < parseInt(767)) {
+	let bannerSlider = $(".bannerSlider");
+	if (bannerSlider) {
+		bannerSlider.slick({
+			swipeToSlide: true,
+			infinite: true,
+			slidesToShow: 1,
+			swipeToSlide: true,
+			prevArrow: '<button type="button" class="category__slider-arrow category__slider-prev"><i class="las la-angle-left"></i></button>',
+			nextArrow: '<button type="button" class="category__slider-arrow category__slider-next"><i class="las la-angle-right"></i></button>',
+			adaptiveHeight: true,
+		});
+	}
 }
