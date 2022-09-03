@@ -891,7 +891,6 @@ div[class*="col"] {
 	}
 }
 
-
 // Faq Item
 .faq-item {
 	text-align: center;
@@ -909,8 +908,81 @@ div[class*="col"] {
 		margin-bottom: 10px;
 	}
 	&__content {
-
 		text-align: left;
 	}
 }
 // Faq Item
+
+// Reservation Section
+.reservation-card {
+	box-shadow: 0 1px 4px hsl(var(--accent) / 0.1);
+	border: 0;
+	.card-header {
+		border-color: hsl(var(--border));
+		background: hsl(var(--white));
+		padding: 30px;
+		@include breakpoint(lg) {
+			padding: 35px;
+		}
+	}
+	.card-body {
+		padding: 30px;
+		@include breakpoint(lg) {
+			padding: 35px;
+		}
+	}
+}
+.color-separator {
+	margin: 15px 0 25px;
+}
+
+.bold-separator {
+	float: left;
+	width: 100%;
+	margin: 50px 0;
+	position: relative;
+}
+.bold-separator span {
+	width: 6px;
+	height: 6px;
+	background: hsl(var(--base));
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.bold-separator:before {
+	left: 30%;
+}
+
+.bold-separator:before,
+.bold-separator:after {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height: 1px;
+	top: 2px;
+	opacity: 0.3;
+	background-color: hsl(var(--base));
+}
+.bold-separator:after {
+	right: 30%;
+}
+#reservation-form input,
+#reservation-form select,
+#reservation-form textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 13px;
+	height: 50px;
+	position: relative;
+	z-index: 20;
+	padding-left: 18px;
+	color: #000;
+	border: 0;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	background: #f9f9f9;
+	font-weight: 400;
+	font-family: "Source Sans Pro", sans-serif;
+}
+// Reservation Section
