@@ -5257,7 +5257,7 @@ table.fc-scrollgrid thead .fc-scroller-harness .fc-scroller {
 }
 
 .chat-body .chat-header {
-    padding: 25px 30px;
+    padding: 20px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5293,7 +5293,7 @@ table.fc-scrollgrid thead .fc-scroller-harness .fc-scroller {
 }
 
 .chat-wrapper {
-    height: 646px;
+    height: 750px;
     overflow: hidden;
 }
 
@@ -5352,12 +5352,11 @@ table.fc-scrollgrid thead .fc-scroller-harness .fc-scroller {
     flex: 1;
     width: 100%;
     overflow-y: auto;
-    height: 495px;
     overflow: hidden auto;
 }
 
 .search-body .user-list {
-    height: 495px;
+    height: 600px;
     overflow: hidden auto;
     padding: 9px 0;
     scrollbar-width: thin;
@@ -6285,5 +6284,33 @@ table.fc-scrollgrid thead .fc-scroller-harness .fc-scroller {
         height: unset;
         padding: 15px 0;
     }
+}
+
+.custom-offer-message-package {
+    font-size: 14px;
+    line-height: 140%;
+    border: 1px solid #e4e5e7;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #62646a;
+}
+
+.custom-package-header {
+    background-color: hsl(var(--dark)/0.07);
+    padding: 20px;
+}
+
+.custom-package-body {
+    padding: 20px;
+    background-color: transparent;
+}
+
+.custom-package-footer {
+    padding: 15px 20px;
+    border-top: 1px solid hsl(var(--border));
+}
+
+.package-content svg {
+    margin-right: 5px !important;
 }
 /*# sourceMappingURL=main.css.map */
