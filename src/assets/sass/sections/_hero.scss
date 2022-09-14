@@ -243,7 +243,6 @@
 }
 // New Added Css for Update 2 Home pages
 
-
 // Image Banenr
 .image-banner-thumb {
 	// height: 100%;
@@ -251,6 +250,14 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+.round-radius-img {
+	@include breakpoint(lg) {
+		padding-left: 25px;
+	}
+	img {
+		border-radius: 54% 52% 51% 49%;
 	}
 }
 // Image Banenr

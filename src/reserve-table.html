@@ -1,0 +1,427 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrale de réservation de restaurants pour groupes</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/magnific.css">
+    <link rel="stylesheet" href="assets/css/lib/datepicker.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+<div class="header">
+    <div class="container custom-container">
+        <div class="header-bottom">
+            <div class="header-bottom-area align-items-center">
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="services.html">Services</a>
+                                <a href="meeting-event.html">Réunions et événements</a>
+                                <a href="regular-meals.html">Repas réguliers</a>
+                                <a href="plan-meals.html">Planifiez vos repas</a>
+                                <a href="partner.html">Become Partner</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="restaurant.html">Food Order</a>
+                    </li>
+                    <li>
+                        <a href="receipts.html">Receipts</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="partner.html">Become Partner</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="sign-in.html">Log In</a>
+                    </li>
+                </ul>
+                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center order-3">
+                    <div class="header-trigger">
+                        <span></span>
+                    </div>
+                </div>
+                <a href="services.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+                <div class="header-right d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-end">
+                    <a href="cart.html" class="fs--20px position-relative"><i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">01</span>
+                    </a>
+                    <a href="partner.html" class="btn btn--light btn--md d-none d-sm-block">Become Partner</a>
+                    <a href="sign-in.html" class="btn btn--base btn--md d-none d-sm-block">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reserve Place Form -->
+<div class="pt-60 pb-80">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center pb-80 table-reservation-top-content">
+            <div class="left-content">
+                <div class="date-contents-wrapper">
+                    <div class="top-content d-flex align-items-center text-center justify-content-between">
+                        <a href="javascript:void(0)" class="left-btn date-change-btn"><i class="las la-angle-left"></i></a>
+                        <div class="date-info">
+                            <h6>Today’s Bookings</h6>
+                            <span class="fs--12px">22 June, 2022</span>
+                        </div>
+                        <a href="javascript:void(0)" class="left-btn date-change-btn"><i class="las la-angle-right"></i></a>
+                    </div>
+                    <ul class="content-list" id="content-list">
+                        <li>
+                            <h6 class="number">#01</h6>
+                            <p>Jhon khan</p>
+                            <p class="time">02:30pm</p>
+                        </li>
+                        <li>
+                            <h6 class="number">#01</h6>
+                            <p>Jhon khan</p>
+                            <p class="time">02:30pm</p>
+                        </li>
+                        <li>
+                            <h6 class="number">#01</h6>
+                            <p>Jhon khan</p>
+                            <p class="time">02:30pm</p>
+                        </li>
+                        <li>
+                            <h6 class="number">#01</h6>
+                            <p>Jhon khan</p>
+                            <p class="time">02:30pm</p>
+                        </li>
+                        <li>
+                            <div class="content-list-toggler inner-toggler"><i class="las la-angle-up"></i></div>
+                        </li>
+                    </ul>
+                    <div class="content-list-toggler"><i class="las la-angle-down"></i></div>
+                </div>
+            </div>
+            <div class="right-content d-flex flex-wrap align-items-center">
+                <ul class="list list-style-one d-flex flex-wrap">
+                    <li>20/60 Seats</li>
+                    <li>2 Wallets</li>
+                </ul>
+                <a href="payment.html" class="btn btn--base">New Reservation</a>
+            </div>
+        </div>
+        <div class="row gx-sm-5 gy-5 justify-content-between">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four table-booked">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="table-reservation-status">Booked</span>
+                            <h3 class="table-count fw-semibold text--base">#01</h3>
+                        </div>
+                        <p class="time">2:30pm</p>
+                        <div>
+                            <span class="icon fs--13px"><i class="fas fa-user"></i></span>
+                            <span class="person fw-bold">2</span>
+                            <span class="name">John Khan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#02</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#03</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four table-booked">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="table-reservation-status">Booked</span>
+                            <h3 class="table-count fw-semibold text--base">#04</h3>
+                        </div>
+                        <p class="time">2:30pm</p>
+                        <div>
+                            <span class="icon fs--13px"><i class="fas fa-user"></i></span>
+                            <span class="person fw-bold">2</span>
+                            <span class="name">John Khan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-7 col-6">
+                <div class="booking-table table-six">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#05</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-6">
+                <div class="booking-table table-six">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#06</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#07</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#08</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="table-reservation-status">Book Now</a>
+                            <h3 class="table-count fw-semibold text--base">#09</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four table-booked">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="table-reservation-status">Booked</span>
+                            <h3 class="table-count fw-semibold text--base">#10</h3>
+                        </div>
+                        <p class="time">2:30pm</p>
+                        <div>
+                            <span class="icon fs--13px"><i class="fas fa-user"></i></span>
+                            <span class="person fw-bold">2</span>
+                            <span class="name">John Khan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="booking-table table-four table-booked">
+                    <div class="table-count-wrapper">
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                        <span class="table"></span>
+                    </div>
+                    <div class="table-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="table-reservation-status">Booked</span>
+                            <h3 class="table-count fw-semibold text--base">#11</h3>
+                        </div>
+                        <p class="time">2:30pm</p>
+                        <div>
+                            <span class="icon fs--13px"><i class="fas fa-user"></i></span>
+                            <span class="person fw-bold">2</span>
+                            <span class="name">John Khan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Reserve Place Form -->
+
+<!-- Footer Section Starts Here -->
+<footer class="footer-section bg--base">
+    <div class="footer-top pt-50 pb-50">
+        <div class="container">
+            <div class="row gy-sm-5 justify-content-sm-between">
+                <div class="col-lg-3">
+                    <div class="footer-widget border-0">
+                        <a href="services.html" class="logo"><img src="assets/images/logo-white.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Legal</h4>
+                        <ul class="links">
+                            <li><a href="notice.html">Legal Notice</a></li>
+                            <li><a href="data-policy.html">Data Privacy</a></li>
+                            <li><a href="conditions.html">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">About</h4>
+                        <ul class="links">
+                            <li><a href="notice.html">Welcome</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="conditions.html">Terms and conditions</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Company</h4>
+                        <ul class="links">
+                            <li><a href="sign-up.html">Join us now</a></li>
+                            <li><a href="about.html">Who we are?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Social Networks</h4>
+                        <ul class="links">
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">LinkdIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="text-white text-center">
+                Copyright &copy; 2022 All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section Ends Here -->
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Pluglin Link -->
+<script src="assets/js/lib/slick.min.js"></script>
+<script src="assets/js/lib/datepicker.js"></script>
+<script src="assets/js/lib/datepicker.en.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+<script>
+    $(".datepicker-here").datepicker({
+        autoClose: true,
+        minDate: new Date()
+    });
+    $('.datepicker-here').on('keydown', function () {
+        return false;
+    })
+</script>
+</body>
+
+</html>

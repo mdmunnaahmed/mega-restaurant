@@ -34,6 +34,7 @@ a {
 }
 
 .custom-container {
-	max-width: 1250px;
-	margin: 0 auto;
+	@include breakpoint(xxl) {
+		max-width: 1250px;
+	}
 }

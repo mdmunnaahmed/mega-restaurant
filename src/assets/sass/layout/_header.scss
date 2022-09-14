@@ -52,6 +52,7 @@
 	align-items: center;
 	margin: 0;
 	position: relative;
+	gap: 0 15px;
 	> .has-sub-menu {
 		margin-right: 20px;
 		@include breakpoint(max-xl) {
@@ -74,6 +75,7 @@
 		}
 	}
 	li {
+		padding-right: 10px;
 		&:hover > .sub-menu {
 			visibility: visible;
 			opacity: 1;
@@ -88,7 +90,7 @@
 				content: "\f107";
 				right: 0;
 				top: 50%;
-				transform: translate(8px, -50%);
+				transform: translate(20px, -50%);
 				font-size: 14px;
 			}
 		}
@@ -96,7 +98,7 @@
 			display: block;
 			position: relative;
 			color: #838383;
-			padding: 5px 20px;
+			padding: 5px 0px;
 		}
 	}
 	.menu-close {
@@ -116,6 +118,7 @@
 		position: relative;
 		a {
 			&.active {
+				padding-inline: 15px;
 				border-radius: 25px;
 				color: hsl(var(--white));
 				background-color: hsl(var(--dark));

@@ -17,6 +17,7 @@
     <!-- Plugin Link -->
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/magnific.css">
+    <link rel="stylesheet" href="assets/css/lib/datepicker.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -27,7 +28,7 @@
     <div class="overlay"></div>
     <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
 <div class="header">
-    <div class="container">
+    <div class="container custom-container">
         <div class="header-bottom">
             <div class="header-bottom-area align-items-center">
                 <ul class="menu">
@@ -110,8 +111,6 @@
                                 <li><a data-bs-toggle="tab" href="#hot-bevrages">Hot Bevrages</a></li>
                                 <li><a data-bs-toggle="tab" href="#ice-creams">Ice Creams</a></li>
                                 <li><a data-bs-toggle="tab" href="#fresh-drinks">Fresh Drinks</a></li>
-                                <li><a data-bs-toggle="tab" href="#cocktails">Cocktails</a></li>
-                                <li><a data-bs-toggle="tab" href="#straters">Straters</a></li>
                             </ul>
                             <div class="details-list-wrapper">
                                 <div class="details-item d-flex flex-wrap align-items-center justify-content-between gap-3">
@@ -257,7 +256,7 @@
                         </div>
                         <div class="tab-pane fade show" id="online-booking">
                             <h2 class="title mb-3 mb-sm-4">Reserve a Table</h2>
-                            <form action="#">
+                            <form action="reserve-table.html" class="online-booking-form">
                                 <div class="row gy-4">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -283,9 +282,9 @@
                                         <div class="form-group">
                                             <label class="form-label">End Time?</label>
                                             <select class="form-select form--control">
-                                                <option value="">10:00 PM</option>
-                                                <option value="">10:30 PM</option>
                                                 <option value="">11:00 PM</option>
+                                                <option value="">12:30 PM</option>
+                                                <option value="">01:00 PM</option>
                                             </select>
                                         </div>
                                     </div>
@@ -345,7 +344,7 @@
                     <div class="cart-info-wrapper">
                         <div class="cart-info-top">
                             <h2 class="title mb-2 mb-sm-3">The Maximilian</h2>
-                            <ul class="contact-info">
+                            <ul class="contact-info opacity-75 fs--15px">
                                 <li class="d-flex"><span><i class="las la-clock"></i></span>28 boulevard diderot, 75012 Paris, France</li>
                                 <li class="d-flex"><span><i class="las la-map-marker-alt"></i></span>10:00AM-2:00AM</li>
                                 <li class="d-flex"><span><i class="las la-phone-volume"></i></span>+33185651949</li>
@@ -382,7 +381,7 @@
                                             <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <span class="text--base fw-semibold">£5.10</span>
-                                                <form action="#" class="d-flex align-items-center">
+                                                <form action="" class="d-flex align-items-center">
                                                     <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
                                                     <input type="text" value="1" class="product-number mx-1">
                                                     <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
@@ -392,10 +391,10 @@
                                     </div>
                                 </div>
                                 <ul>
-                                    <li class="d-flex justify-content-between d-none d-lg-block"><span>Subtotal</span> <span>£5.10</span></li>
-                                    <li class="d-flex justify-content-between d-none d-lg-block"><span>Delivery fee</span> <span>Free</span></li>
-                                    <li class="d-flex justify-content-between d-none d-lg-block fw-semibold"><span>Total</span> <span>£5.10</span></li>
-                                    <li><a href="#0" class="cmn--btn d-block text-center">Checkout Now</a></li>
+                                    <li class="justify-content-between d-none d-lg-flex"><span>Subtotal</span> <span>£5.10</span></li>
+                                    <li class="justify-content-between d-none d-lg-flex"><span>Delivery fee</span> <span>Free</span></li>
+                                    <li class="justify-content-between d-none d-lg-flex fw-semibold"><span>Total</span> <span>£5.10</span></li>
+                                    <li><a href="reserve-table.html" class="cmn--btn d-block text-center">Checkout Now</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -478,6 +477,8 @@
 
 <!-- Pluglin Link -->
 <script src="assets/js/lib/slick.min.js"></script>
+<script src="assets/js/lib/datepicker.js"></script>
+<script src="assets/js/lib/datepicker.en.js"></script>
 
 <!-- Main js -->
 <script src="assets/js/main.js"></script>

@@ -1,0 +1,265 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrale de réservation de restaurants pour groupes</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/magnific.css">
+    <link rel="stylesheet" href="assets/css/lib/datepicker.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+<div class="header">
+    <div class="container custom-container">
+        <div class="header-bottom">
+            <div class="header-bottom-area align-items-center">
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:void(0)">Services</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="services.html">Services</a>
+                                <a href="meeting-event.html">Réunions et événements</a>
+                                <a href="regular-meals.html">Repas réguliers</a>
+                                <a href="plan-meals.html">Planifiez vos repas</a>
+                                <a href="partner.html">Become Partner</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="restaurant.html">Food Order</a>
+                    </li>
+                    <li>
+                        <a href="receipts.html">Receipts</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="partner.html">Become Partner</a>
+                    </li>
+                    <li class="d-sm-none">
+                        <a href="sign-in.html">Log In</a>
+                    </li>
+                </ul>
+                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center order-3">
+                    <div class="header-trigger">
+                        <span></span>
+                    </div>
+                </div>
+                <a href="services.html" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+                <div class="header-right d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-end">
+                    <a href="cart.html" class="fs--20px position-relative"><i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">01</span>
+                    </a>
+                    <a href="partner.html" class="btn btn--light btn--md d-none d-sm-block">Become Partner</a>
+                    <a href="sign-in.html" class="btn btn--base btn--md d-none d-sm-block">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<div class="overflow-hidden">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="pt-60 pb-60 bg-white pe-lg-5">
+                    <h2 class="title mb-3 mb-sm-4 pb-lg-2 fw-bold">Make Payment</h2>
+                    <form action="" class="online-booking-form">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control form--control" placeholder="Enter your firstname">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control form--control" placeholder="Enter Lastname">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control form--control" placeholder="Enter Email Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">Card Number</label>
+                                    <input type="tel" class="form-control form--control" placeholder="Enter card number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">CVC</label>
+                                    <input type="tel" class="form-control form--control" placeholder="Enter CVC">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <button type="submit" class="order-btn d-block w-100 border-0">Add Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-60 pb-60 payment-page-sidebar position-relative">
+                <div class="cart-info-wrapper m-0 shadow-none ps-lg-4 ps-xl-5">
+                    <div class="cart-info-top bg-transparent p-0">
+                        <h3 class="title mb-2 mb-sm-3 fw-bold">Order Summary</h3>
+                        <ul>
+                            <li class="justify-content-between d-none d-lg-flex"><span>Table no.</span> <span>#04</span></li>
+                            <li class="justify-content-between d-none d-lg-flex"><span>Seats</span> <span>5</span></li>
+                        </ul>
+                    </div>
+                    <div class="cart-info-bottom bg-transparent p-0">
+                        <div class="cart-info-bottom-inner">
+                            <h4 class="title fw-semibold d-none d-lg-block">Your Order</h4>
+
+                            <p class="d-flex justify-content-between fw-semibold d-lg-none"><span>Total</span> <span>£5.10</span></li>
+
+                            <div class="order-list-wrapper">
+                                <div class="order-item d-flex flex-wrap align-items-center">
+                                    <div class="order-item__thumb">
+                                        <img src="assets/images/thumb/order-thumb.png" alt="thumb">
+                                    </div>
+                                    <div class="order-item__content">
+                                        <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text--base fw-semibold">£5.10</span>
+                                            <form action="#" class="d-flex align-items-center">
+                                                <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
+                                                <input type="text" value="1" class="product-number mx-1">
+                                                <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-item d-flex flex-wrap align-items-center">
+                                    <div class="order-item__thumb">
+                                        <img src="assets/images/thumb/order-thumb.png" alt="thumb">
+                                    </div>
+                                    <div class="order-item__content">
+                                        <p class="fw-semibold title mb-2">3 CHEESE ASSORTMENT</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text--base fw-semibold">£5.10</span>
+                                            <form action="" class="d-flex align-items-center">
+                                                <span class="minus-plus cart-minus"><i class="fas fa-minus-circle"></i></span>
+                                                <input type="text" value="1" class="product-number mx-1">
+                                                <span class="minus-plus cart-plus"><i class="fas fa-plus-circle"></i></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="justify-content-between d-none d-lg-flex fw-semibold"><span>Total</span> <span>£5.10</span></li>
+                                <li><a href="" class="cmn--btn d-block text-center">Confirm Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Payment Section -->
+
+<!-- Footer Section Starts Here -->
+<footer class="footer-section bg--base">
+    <div class="footer-top pt-50 pb-50">
+        <div class="container">
+            <div class="row gy-sm-5 justify-content-sm-between">
+                <div class="col-lg-3">
+                    <div class="footer-widget border-0">
+                        <a href="services.html" class="logo"><img src="assets/images/logo-white.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Legal</h4>
+                        <ul class="links">
+                            <li><a href="notice.html">Legal Notice</a></li>
+                            <li><a href="data-policy.html">Data Privacy</a></li>
+                            <li><a href="conditions.html">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">About</h4>
+                        <ul class="links">
+                            <li><a href="notice.html">Welcome</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="conditions.html">Terms and conditions</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Company</h4>
+                        <ul class="links">
+                            <li><a href="sign-up.html">Join us now</a></li>
+                            <li><a href="about.html">Who we are?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget__title text-white mb-sm-3">Social Networks</h4>
+                        <ul class="links">
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">LinkdIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="text-white text-center">
+                Copyright &copy; 2022 All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section Ends Here -->
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Pluglin Link -->
+<script src="assets/js/lib/slick.min.js"></script>
+<script src="assets/js/lib/datepicker.js"></script>
+<script src="assets/js/lib/datepicker.en.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

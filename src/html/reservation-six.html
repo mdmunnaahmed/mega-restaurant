@@ -1,32 +1,5 @@
 <!-- meta tags and other links -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centrale de réservation de restaurants pour groupes</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
-    <!-- bootstrap 5  -->
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
-    <!-- Icon Link  -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/lib/animate.css">
-
-    <!-- Plugin Link -->
-    <link rel="stylesheet" href="assets/css/lib/slick.css">
-    <link rel="stylesheet" href="assets/css/lib/magnific.css">
-    <link rel="stylesheet" href="assets/css/lib/datepicker.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-
-<body>
-    <!-- Overlay -->
-    <div class="overlay"></div>
-    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+@@include('../partial-html/_template-top.html')
 <div class="header">
     <div class="container">
         <div class="header-bottom">
@@ -78,14 +51,16 @@
     <div class="container">
         <div class="d-flex flex-wrap banner-content-two align-items-center flex-wrap-reverse">
             <div class="banner-content-two__left">
-                <h1 class="banner-title">Le guide pour réserver des restaurants pour groupes</h1>
-                <p class="banner-text">Si vous voulez réserver un restaurant pour groupes .Guide des
-                    Gourmets , vous offre une sélection de restaurants spécialisés
-                    dans l'accueil des groupes.</p>
+                <h1 class="banner-title">Vous souhaitez organiser une soirée dansante à Paris ? En France ?</h1>
+                <p class="banner-text">
+                    Nous organisons des soirées dansantes toutes l’année, pour des groupes multinationaux comme pour des PME. Nous avons sur Paris des
+                    dizaines de
+                    restaurants et de lieux aptes à vous recevoir pour votre soirée dansante, en privatif ou non…
+                </p>
                 <a href="" class="cmn--btn rounded-5">ENQUIRE NOW</a>
             </div>
-            <div class="banner-content-two__right">
-                <img src="assets/images/thumb/index1-thumb.png" alt="thumb" class="mw-100">
+            <div class="banner-content-two__right round-radius-img">
+                <img src="assets/images/copy-sec/thumb6.jpg" alt="thumb" class="mw-100">
             </div>
         </div>
     </div>
@@ -228,7 +203,9 @@
             <h2 class="section-header-two__title"><span class="text--base">Découvrez en 45 secondes</span> la solution Guide des Gourmets</h2>
         </div>
         <div class="video-wrapper">
-            <iframe class="video" width="100%" height="540" src="https://www.youtube.com/embed/PCAwJs51D0k" title="Perfect Pizza at Home" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="100%" height="540" src="https://www.youtube.com/embed/PCAwJs51D0k" title="Perfect Pizza at Home"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 </div>
@@ -239,7 +216,8 @@
 <div class="skill-section pt-70 pb-70 bg--light">
     <div class="container container2">
         <div class="section-header-two text-center">
-            <h2 class="section-header-two__title mb-4 pb-2 pb-sm-3"><span class="text--base">La solution Guide des Gourmets </span> <br> Nos domaines de compétences</h2>
+            <h2 class="section-header-two__title mb-4 pb-2 pb-sm-3"><span class="text--base">La solution Guide des Gourmets </span> <br> Nos domaines
+                de compétences</h2>
         </div>
         <div class="d-flex flex-wrap skill-wrapper justify-content-center">
             <div class="skill-item">
@@ -333,7 +311,7 @@
 <div class="pt-120 pb-120">
     <div class="container">
         <div class="section-header-two text-center pb-70">
-            <h2 class="section-header-two__title">Request a <span class="text--base">call back</span></h2>
+            <h2 class="section-header-two__title">DÉPOSEZ VOTRE BRIEF</span></h2>
         </div>
         <div class="row justify-content-center">
             <div class="col-xxl-6 col-lg-8 col-md-10">
@@ -382,7 +360,8 @@
                     <div class="pb-40"></div>
                     <div class="row">
                         <div class="col-12">
-                            <textarea cols="30" rows="10" class="form-control form--control" placeholder="Is there anything else you’d like us to know?"></textarea>
+                            <textarea cols="30" rows="10" class="form-control form--control"
+                                placeholder="Is there anything else you’d like us to know?"></textarea>
                         </div>
                     </div>
                     <div class="pb-40"></div>
@@ -394,81 +373,8 @@
 </div>
 <!-- Form Section Ends Here -->
 
-<!-- Footer Section Starts Here -->
-<footer class="footer-section bg--base">
-    <div class="footer-top pt-50 pb-50">
-        <div class="container">
-            <div class="row gy-sm-5 justify-content-sm-between">
-                <div class="col-lg-3">
-                    <div class="footer-widget border-0">
-                        <a href="services.html" class="logo"><img src="assets/images/logo-white.png" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget__title text-white mb-sm-3">Legal</h4>
-                        <ul class="links">
-                            <li><a href="notice.html">Legal Notice</a></li>
-                            <li><a href="data-policy.html">Data Privacy</a></li>
-                            <li><a href="conditions.html">Terms and conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget__title text-white mb-sm-3">About</h4>
-                        <ul class="links">
-                            <li><a href="notice.html">Welcome</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="conditions.html">Terms and conditions</a></li>
-                            <li><a href="faq.html">FAQ's</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget__title text-white mb-sm-3">Company</h4>
-                        <ul class="links">
-                            <li><a href="sign-up.html">Join us now</a></li>
-                            <li><a href="about.html">Who we are?</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget__title text-white mb-sm-3">Social Networks</h4>
-                        <ul class="links">
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">LinkdIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <p class="text-white text-center">
-                Copyright &copy; 2022 All Rights Reserved.
-            </p>
-        </div>
-    </div>
-</footer>
-<!-- Footer Section Ends Here -->
-<!-- jQuery library -->
-<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
-
-<!-- Bootstrap 5 js -->
-<script src="assets/js/lib/bootstrap.min.js"></script>
-
-<!-- Pluglin Link -->
-<script src="assets/js/lib/slick.min.js"></script>
-<script src="assets/js/lib/datepicker.js"></script>
-<script src="assets/js/lib/datepicker.en.js"></script>
-
-<!-- Main js -->
-<script src="assets/js/main.js"></script>
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
 </body>
 
 </html>
